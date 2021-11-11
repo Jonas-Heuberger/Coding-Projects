@@ -1,0 +1,177 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > main</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: main (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">main</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (4/5)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    83,8%
+  </span>
+  <span class="absValue">
+    (31/37)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;import java.util.Scanner;
+<i class="no-highlight">2</i>&nbsp;
+<b class="nc"><i class="no-highlight">3</i>&nbsp;public class main {</b>
+<i class="no-highlight">4</i>&nbsp;    public static void main(String[] args) {
+<b class="fc"><i class="no-highlight">5</i>&nbsp;        System.out.print(&quot;Geben Sie eine Zahl ein: &quot;);</b>
+<b class="fc"><i class="no-highlight">6</i>&nbsp;        int betrag = Abfrage();</b>
+<b class="fc"><i class="no-highlight">7</i>&nbsp;        int[] Noten = berechnen(betrag);</b>
+<b class="fc"><i class="no-highlight">8</i>&nbsp;        Ausgabe(Noten);</b>
+<i class="no-highlight">9</i>&nbsp;    }
+<i class="no-highlight">10</i>&nbsp;    private static int Abfrage() {
+<b class="fc"><i class="no-highlight">11</i>&nbsp;        Scanner scan = new Scanner(System.in);</b>
+<b class="fc"><i class="no-highlight">12</i>&nbsp;        int Zahl = scan.nextInt();</b>
+<b class="fc"><i class="no-highlight">13</i>&nbsp;        return Zahl;</b>
+<i class="no-highlight">14</i>&nbsp;    }
+<i class="no-highlight">15</i>&nbsp;
+<i class="no-highlight">16</i>&nbsp;    public static int[] berechnen(int betrag){
+<b class="fc"><i class="no-highlight">17</i>&nbsp;        int[]Noten = new int[9];</b>
+<i class="no-highlight">18</i>&nbsp;
+<b class="fc"><i class="no-highlight">19</i>&nbsp;        for (Noten[0] = 0; betrag &gt;= 1000; Noten[0]++){</b>
+<b class="fc"><i class="no-highlight">20</i>&nbsp;            betrag = betrag - 1000;</b>
+<i class="no-highlight">21</i>&nbsp;        }
+<i class="no-highlight">22</i>&nbsp;        
+<b class="fc"><i class="no-highlight">23</i>&nbsp;        for (Noten[1] = 0; betrag &gt;= 200; Noten[1]++){</b>
+<b class="nc"><i class="no-highlight">24</i>&nbsp;            betrag = betrag - 200;</b>
+<i class="no-highlight">25</i>&nbsp;        }
+<i class="no-highlight">26</i>&nbsp;        
+<b class="fc"><i class="no-highlight">27</i>&nbsp;        for (Noten[2] = 0; betrag &gt;= 100; Noten[2]++){</b>
+<b class="fc"><i class="no-highlight">28</i>&nbsp;            betrag = betrag - 100;</b>
+<i class="no-highlight">29</i>&nbsp;        }
+<i class="no-highlight">30</i>&nbsp;        
+<b class="fc"><i class="no-highlight">31</i>&nbsp;        for (Noten[3] = 0; betrag &gt;= 50; Noten[3]++){</b>
+<b class="nc"><i class="no-highlight">32</i>&nbsp;            betrag = betrag - 50;</b>
+<i class="no-highlight">33</i>&nbsp;        }
+<i class="no-highlight">34</i>&nbsp;        
+<b class="fc"><i class="no-highlight">35</i>&nbsp;        for (Noten[4] = 0; betrag &gt;= 20; Noten[4]++){</b>
+<b class="fc"><i class="no-highlight">36</i>&nbsp;            betrag = betrag - 20;</b>
+<i class="no-highlight">37</i>&nbsp;        }
+<i class="no-highlight">38</i>&nbsp;        
+<b class="fc"><i class="no-highlight">39</i>&nbsp;        for (Noten[5] = 0; betrag &gt;= 10; Noten[5]++){</b>
+<b class="nc"><i class="no-highlight">40</i>&nbsp;            betrag = betrag - 10;</b>
+<i class="no-highlight">41</i>&nbsp;        }
+<i class="no-highlight">42</i>&nbsp;        
+<b class="fc"><i class="no-highlight">43</i>&nbsp;        for (Noten[6] = 0; betrag &gt;= 5; Noten[6]++){</b>
+<b class="nc"><i class="no-highlight">44</i>&nbsp;            betrag = betrag - 5;</b>
+<i class="no-highlight">45</i>&nbsp;        }
+<i class="no-highlight">46</i>&nbsp;        
+<b class="fc"><i class="no-highlight">47</i>&nbsp;        for (Noten[7] = 0; betrag &gt;= 2; Noten[7]++){</b>
+<b class="fc"><i class="no-highlight">48</i>&nbsp;            betrag = betrag - 2;</b>
+<i class="no-highlight">49</i>&nbsp;        }
+<i class="no-highlight">50</i>&nbsp;        
+<b class="fc"><i class="no-highlight">51</i>&nbsp;        for (Noten[8] = 0; betrag &gt;= 1; Noten[8]++){</b>
+<b class="nc"><i class="no-highlight">52</i>&nbsp;            betrag = betrag - 1;</b>
+<i class="no-highlight">53</i>&nbsp;        }
+<i class="no-highlight">54</i>&nbsp;
+<b class="fc"><i class="no-highlight">55</i>&nbsp;       return Noten;</b>
+<i class="no-highlight">56</i>&nbsp;    }
+<i class="no-highlight">57</i>&nbsp;
+<i class="no-highlight">58</i>&nbsp;    
+<i class="no-highlight">59</i>&nbsp;    private static void Ausgabe(int[] Noten){
+<b class="fc"><i class="no-highlight">60</i>&nbsp;        System.out.println(&quot;Tausender: &quot; + Noten[0]);</b>
+<b class="fc"><i class="no-highlight">61</i>&nbsp;        System.out.println(&quot;Zweihunderter: &quot; + Noten[1]);</b>
+<b class="fc"><i class="no-highlight">62</i>&nbsp;        System.out.println(&quot;Hunderter: &quot; + Noten[2]);</b>
+<b class="fc"><i class="no-highlight">63</i>&nbsp;        System.out.println(&quot;Fünfziger: &quot; + Noten[3]);</b>
+<b class="fc"><i class="no-highlight">64</i>&nbsp;        System.out.println(&quot;Zwanziger: &quot; + Noten[4]);</b>
+<b class="fc"><i class="no-highlight">65</i>&nbsp;        System.out.println(&quot;Zehner: &quot; + Noten[5]);</b>
+<b class="fc"><i class="no-highlight">66</i>&nbsp;        System.out.println(&quot;Fünfer: &quot; + Noten[6]);</b>
+<b class="fc"><i class="no-highlight">67</i>&nbsp;        System.out.println(&quot;Zweier:  &quot; + Noten[7]);</b>
+<b class="fc"><i class="no-highlight">68</i>&nbsp;        System.out.println(&quot;Einer: &quot; + Noten[8]);</b>
+<i class="no-highlight">69</i>&nbsp;
+<i class="no-highlight">70</i>&nbsp;    }
+<i class="no-highlight">71</i>&nbsp;
+<i class="no-highlight">72</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-10-27 22:59</div>
+</div>
+</body>
+</html>
