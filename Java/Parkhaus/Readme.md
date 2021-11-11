@@ -1,13 +1,13 @@
 
-Title and Persons
-    -Parkhaus 
+# Title and Persons
+    - Parkhaus 
     - Jonas Heuberger
     - Manuel Capretta
 
-Overview
+# Overview
    - Create a car park in Java OOP
 
-Klassen
+# UML
     - Autos
 
     - Bariere
@@ -17,5 +17,7 @@ Klassen
         Besetzt()
 
     - Parkhaus
+
+    - Main
 
 
