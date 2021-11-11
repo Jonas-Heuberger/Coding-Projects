@@ -10,7 +10,7 @@
 # UML
 - Autos
 
-- Bariere
+- Barriere
     - Check status()
 
 - Parkplatz
