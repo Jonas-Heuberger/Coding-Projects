@@ -7,6 +7,15 @@ Title and Persons
 Overview
    - Create a car park in Java OOP
 
-Solution
-    - 
+Klassen
+    - Autos
+
+    - Bariere
+        - Check status
+
+    - Parkplatz
+        - Besetzt
+
+    - Parkhaus
+    
 
