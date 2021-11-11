@@ -1,23 +1,26 @@
 
 # Title and Persons
-    - Parkhaus 
-    - Jonas Heuberger
-    - Manuel Capretta
+- Parkhaus 
+- Jonas Heuberger
+- Manuel Capretta
 
 # Overview
    - Create a car park in Java OOP
 
 # UML
-    - Autos
+- Autos
 
-    - Bariere
-        Check status()
+- Bariere
+    - Check status()
 
-    - Parkplatz
-        Besetzt()
+- Parkplatz
+    - Besetzt()
 
-    - Parkhaus
+- Parkhaus
 
-    - Main
+- Main
+
+# Solution
+
 
 
