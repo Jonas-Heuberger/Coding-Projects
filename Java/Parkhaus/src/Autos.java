@@ -6,6 +6,4 @@ public class Autos {
 
   int parkSpot;
   int carNumber;
-
-  
 }
