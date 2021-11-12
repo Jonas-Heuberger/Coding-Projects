@@ -1,6 +1,6 @@
 
 # Title and Persons
-- Parkhaus 
+- Java.Parkhaus.Parkhaus 
 - Jonas Heuberger
 - Manuel Capretta
 
@@ -8,12 +8,12 @@
    - Create a car park in Java OOP
 
 # UML
-- Autos
+- Java.Parkhaus.Autos
 
-- Parkplatz
+- Java.Parkhaus.Parkplatz
     - Besetzt()
 
-- Parkhaus
+- Java.Parkhaus.Parkhaus
 
 - Main
 

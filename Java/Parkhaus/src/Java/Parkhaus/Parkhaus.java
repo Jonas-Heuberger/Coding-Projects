@@ -8,7 +8,7 @@ public class Parkhaus {
     Parkplatz pTre = new Parkplatz();
     Parkplatz pFor = new Parkplatz();
 
-    //Erstellen von Autos
+    //Erstellen von Java.Parkhaus.Autos
     Autos cOne = new Autos();
     Autos cTwo = new Autos();
     Autos cTre = new Autos();

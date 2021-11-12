@@ -1,8 +1,7 @@
 package Java.Parkhaus;
 
-
 /**
- * main
+ * Java.Parkhaus.main
  */
 public class main {
 
