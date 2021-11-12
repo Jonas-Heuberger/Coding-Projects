@@ -1,6 +1,5 @@
 package Java.Parkhaus;
 
-import Java.Parkhaus.Parkhaus;
 
 /**
  * main
@@ -8,7 +7,7 @@ import Java.Parkhaus.Parkhaus;
 public class main {
 
     public static void main(String[] args) {
-        Parkhaus p = new Parkhaus();
+        Java.Parkhaus.Parkhaus p = new Java.Parkhaus.Parkhaus();
         p.zuteilung();
         p.checkSpace();
     }
