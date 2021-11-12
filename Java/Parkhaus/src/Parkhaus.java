@@ -16,8 +16,8 @@ public class Parkhaus {
 
     int arrSize = 4;
 
-    public Parkplatz parkplatzArray[] = new Parkplatz[arrSize];
-    public Autos carArray[] = new Autos[arrSize];
+    public Parkplatz[] parkplatzArray = new Parkplatz[arrSize];
+    public Autos[] carArray = new Autos[arrSize];
 
 //Parkfelder zuteilen
     public void zuteilung(){
