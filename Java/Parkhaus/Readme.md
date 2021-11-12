@@ -10,9 +10,6 @@
 # UML
 - Autos
 
-- Barriere
-    - Check status()
-
 - Parkplatz
     - Besetzt()
 
@@ -25,7 +22,7 @@
 - Create the Classes first
 - Create 5 Parking places
 - Create a free parking space function
-- 
+
 
 
 
