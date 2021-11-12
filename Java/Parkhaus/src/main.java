@@ -1,5 +1,7 @@
 package Java.Parkhaus;
 
+import Java.Parkhaus.Parkhaus;
+
 /**
  * main
  */
