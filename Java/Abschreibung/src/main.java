@@ -6,10 +6,8 @@ public class main {
         double Betrag = Abfrage();
         System.out.println("Geben Sie die Anzahl Jahre ein: ");
         double Jahre = Abfrage();
-        System.out.println("geben sie den Prozentsatz ein: ");
-        double Prozentsatz = Abfrage();
-        double result = Calc(Betrag, Jahre, Prozentsatz);
-        Output(result, Betrag, Jahre);
+        double[] result = Calc(Betrag, Jahre);
+        Output(result);
     }
 
     private static double Abfrage(){
@@ -19,19 +17,18 @@ public class main {
         return Zahl;
     }
 
-    private static double Calc(double Betrag, double Jahre, double Prozentsatz){
-        double result3 = 0;
-        double result = Betrag / 100;
-        double result2 = result * Prozentsatz;
-       while (Jahre >= 0){
-           Jahre--;
-           result3 = Betrag - result2;
-       }
-       return result3;
+    private static double[] Calc(double Betrag, double Jahre){
+       double JährlicheAbschreibung = Betrag / Jahre;
+       double Prozentsatz = 100 / Jahre;
+       double[] Abschreibung  = new double[2];
+        Abschreibung[0] = JährlicheAbschreibung;
+        Abschreibung[1] = Prozentsatz;
+       return Abschreibung;
+
 
     }
-    private static void Output(double result, double Betrag, double Jahre){
-        System.out.println("Ihn " + Jahre + " Jahren werden " + result + " von " + Betrag + " abgezogen" );
+    private static void Output(double[] result){
+        System.out.println("Jährlich werden " + result[0] + "CHF zum Prozentsatz von " + result[1] + "% abgezogen" );
 
     }
 }
