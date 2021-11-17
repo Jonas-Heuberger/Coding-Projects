@@ -23,7 +23,7 @@ public class main {
         double result3 = 0;
         double result = Betrag / 100;
         double result2 = result * Prozentsatz;
-       while (Jahre >= 1){
+       while (Jahre >= 0){
            Jahre--;
            result3 = Betrag - result2;
        }
