@@ -1,5 +1,5 @@
 public class Grid {
-    int[][] twoD_arr = new int[3][3];
+    public static int[][] twoD_arr = new int[3][3];
 
     /*
     0 | 1 | 2
