@@ -5,6 +5,11 @@ public class Hund {
     String fellfarbe;
     boolean kannPfoteGeben;
 
+    //Konstruktor
+    public Hund(){
+
+    }
+
     //Methoden
     public void bellen(){
         System.out.println("Wuff Wuff");
