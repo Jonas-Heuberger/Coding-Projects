@@ -6,13 +6,17 @@ public class Hund {
     boolean kannPfoteGeben;
 
     //Konstruktor
-    public Hund(){
+    public Hund(int alter, String art, String fellfarbe, boolean kannPfoteGeben){
+        this.alter = alter;
+        this.art = art;
+        this.fellfarbe = fellfarbe;
+        this.kannPfoteGeben = kannPfoteGeben;
 
     }
 
     //Methoden
-    public void bellen(){
-        System.out.println("Wuff Wuff");
+    public void bellen(String bellen){
+        System.out.println(bellen);
     }
     public void plusRechnen(int num1, int num2, int num3){
         System.out.println(num1 + num2 + num3);
