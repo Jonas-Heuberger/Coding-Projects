@@ -1,7 +1,6 @@
 public class Automat {
-    //Attribute
+    public static void main(String[] args) {
 
-    //Konstruktor
+    }
 
-    //Methoden
 }
