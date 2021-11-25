@@ -23,12 +23,22 @@ public class main {
         Auto Mercedes = new Auto("Mercedes", "Schwarz", "Benzin", 100);
         Auto Audi = new Auto("Audi", "Rot", "Benzin", 89);
         Auto BMW = new Auto("BMW", "Blau", "Diesel", 96);
+
         Auto[] Autos = {User, Mercedes, Audi, BMW};
+
+
+        autoMarke(Autos);
+
         int Black = countBlack(Autos);
         System.out.println(Black + " Autos sind Schwarz");
 
     }
 
+    public static void autoMarke(Auto[] Autos){
+        for (int i = 0; i < Autos.length; i++) {
+            System.out.println(Autos[i].Marke);
+        }
+    }
 
     public static int countBlack(Auto[] Autos){
          int counter = 0;
