@@ -19,4 +19,7 @@ public class Katze {
     public void miauen(String miauen){
         System.out.println(miauen);
     }
+    void springen(){
+        System.out.println("Katze springt");
+    }
 }

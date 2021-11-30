@@ -5,5 +5,6 @@ public class main {
         Katze[] array = new Katze[1];
         array[0] = cat;
         System.out.println(array[0].alter);
+        cat.springen();
     }
 }
