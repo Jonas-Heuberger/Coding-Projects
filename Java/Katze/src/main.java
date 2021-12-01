@@ -7,6 +7,8 @@ public class main {
         System.out.println(array[0].alter);
         cat.springen(4);
         System.out.println(cat.alter);
+        Hund dog = new Hund(4, 4, "braun", "braun", true);
+        dog.showDog();
     }
 
 }
