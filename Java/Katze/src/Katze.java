@@ -19,7 +19,48 @@ public class Katze {
     public void miauen(String miauen){
         System.out.println(miauen);
     }
-    void springen(){
-        System.out.println("Katze springt");
+    void springen(int höhe){
+        System.out.println("Katze springt " + höhe + " Meter hoch");
+    }
+
+
+    public int getAlter() {
+        return alter;
+    }
+
+    public void setAlter(int alter) {
+        this.alter = alter;
+    }
+
+    public String getFellfarbe() {
+        return fellfarbe;
+    }
+
+    public void setFellfarbe(String fellfarbe) {
+        this.fellfarbe = fellfarbe;
+    }
+
+    public String getAugenfarbe() {
+        return augenfarbe;
+    }
+
+    public void setAugenfarbe(String augenfarbe) {
+        this.augenfarbe = augenfarbe;
+    }
+
+    public String getRasse() {
+        return rasse;
+    }
+
+    public void setRasse(String rasse) {
+        this.rasse = rasse;
+    }
+
+    public int getGrösse() {
+        return grösse;
+    }
+
+    public void setGrösse(int grösse) {
+        this.grösse = grösse;
     }
 }
