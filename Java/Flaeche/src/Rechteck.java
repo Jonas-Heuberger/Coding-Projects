@@ -7,7 +7,7 @@ public class Rechteck {
         this.breite = breite;
     }
 
-    public void flaeche(){
+     void flaeche(){
         int flaeche = laenge * breite;
         System.out.println(flaeche);
     }
