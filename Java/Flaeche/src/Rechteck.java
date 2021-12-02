@@ -11,4 +11,20 @@ public class Rechteck {
         int flaeche = laenge * breite;
         System.out.println(flaeche);
     }
+
+    public int getLaenge() {
+        return laenge;
+    }
+
+    public void setLaenge(int laenge) {
+        this.laenge = laenge;
+    }
+
+    public int getBreite() {
+        return breite;
+    }
+
+    public void setBreite(int breite) {
+        this.breite = breite;
+    }
 }
