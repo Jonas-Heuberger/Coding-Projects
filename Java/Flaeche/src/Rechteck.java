@@ -1,15 +1,21 @@
 public class Rechteck {
     int laenge;
     int breite;
+    int hoehe;
 
-    public Rechteck(int laenge, int breite) {
+    public Rechteck(int laenge, int breite, int hoehe) {
         this.laenge = laenge;
         this.breite = breite;
+        this.hoehe = hoehe;
     }
 
      void flaeche(){
         int flaeche = laenge * breite;
-        System.out.println(flaeche);
+        System.out.println(flaeche + " m2");
+    }
+    void Volumen(){
+        int volumen = laenge * breite * hoehe;
+        System.out.println(volumen + " m3");
     }
 
     public int getLaenge() {
