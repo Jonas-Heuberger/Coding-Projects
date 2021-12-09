@@ -16,4 +16,10 @@ public class AdressItem {
         this.plz = plz;
         this.ort = ort;
     }
+
+    void edit(){
+        Main.AdressItem();
+    }
+
+
 }

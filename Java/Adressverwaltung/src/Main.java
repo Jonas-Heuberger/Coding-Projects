@@ -4,13 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         AdressItem userAdresse = AdressItem();
-
-        System.out.println("id: " + userAdresse.id);
-        System.out.println("Nachname: " + userAdresse.nachname);
-        System.out.println("Vorname: " + userAdresse.vorname);
-        System.out.println("Strasse: " + userAdresse.strasse);
-        System.out.println("PLZ: " + userAdresse.plz);
-        System.out.println("Ort: " + userAdresse.ort);
+        showUserAdresse(userAdresse);
     }
 
      private static int AbfrageINT(){
@@ -25,7 +19,7 @@ public class Main {
         return txt;
     }
 
-    private static AdressItem AdressItem(){
+    public static AdressItem AdressItem(){
         System.out.println("geben Sie Ihre ID ein: ");
         int userId = AbfrageINT();
 
@@ -44,8 +38,29 @@ public class Main {
         System.out.println("geben Sie Ihren Ort ein: ");
         String userOrt = AbrageString();
 
+        checkInput();
+
         AdressItem userAdresse = new AdressItem(userId, userNachname, userVorname, userStrasse, userPLZ, userOrt);
         return userAdresse;
+    }
+
+    private static void checkInput(){
+        System.out.println("ist das Korrekt? ");
+        String correct = AbrageString();
+        if (correct.equals("ja")){
+            System.out.println("Perfekt vielen Dank");
+        } else {
+            AdressItem();
+        }
+    }
+
+    private static void showUserAdresse(AdressItem userAdresse){
+        System.out.println("id: " + userAdresse.id);
+        System.out.println("Nachname: " + userAdresse.nachname);
+        System.out.println("Vorname: " + userAdresse.vorname);
+        System.out.println("Strasse: " + userAdresse.strasse);
+        System.out.println("PLZ: " + userAdresse.plz);
+        System.out.println("Ort: " + userAdresse.ort);
     }
 
 }
