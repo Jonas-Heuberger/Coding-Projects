@@ -7,13 +7,9 @@ public class Main {
         showUserAdresse(userAdresse);
     }
 
-     private static int AbfrageINT(){
-        Scanner scanner = new Scanner(System.in);
-        int zahl = scanner.nextInt();
-        return zahl;
-    }
 
-    private static String AbrageString(){
+
+    public static String AbrageString(){
         Scanner scanner = new Scanner(System.in);
         String txt = scanner.next();
         return txt;
@@ -21,7 +17,7 @@ public class Main {
 
     public static AdressItem AdressItem(){
         System.out.println("geben Sie Ihre ID ein: ");
-        int userId = AbfrageINT();
+        String userId = AbrageString();
 
         System.out.println("geben Sie Ihren Nachname ein: ");
         String userNachname = AbrageString();
@@ -33,7 +29,7 @@ public class Main {
         String userStrasse = AbrageString();
 
         System.out.println("geben Sie Ihre PLZ ein: ");
-        int userPLZ = AbfrageINT();
+        String userPLZ = AbrageString();
 
         System.out.println("geben Sie Ihren Ort ein: ");
         String userOrt = AbrageString();
