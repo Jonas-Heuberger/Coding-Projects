@@ -1,2 +1,3 @@
-public class Katze {
+public class Katze extends Tierverwaltung{
+
 }

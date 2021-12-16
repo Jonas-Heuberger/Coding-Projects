@@ -1,2 +1,3 @@
-public class Hund {
+public class Hund extends Tierverwaltung {
+
 }
