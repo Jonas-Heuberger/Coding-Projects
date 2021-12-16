@@ -12,11 +12,14 @@ public class Main {
 
         double ALV2limit = 12350;
 
+        double Koordinationsabzug = 2073.75;
+
 
         if (lohn > 12350){   
         AHVbeitrag(lohn, AHVprozent);
         ALVbeitrag(lohn, ALVprozent, ALV2limit);
         ALV2(lohn);
+
 
         } else {
             AHVbeitrag(lohn, AHVprozent);
@@ -29,6 +32,7 @@ public class Main {
         double Zahl = scanner.nextDouble();
         return Zahl;
     }
+    
     private static void AHVbeitrag(double lohn, double AHVprozent){
         System.out.println((lohn / 100) * AHVprozent);
     }
@@ -39,7 +43,6 @@ public class Main {
         } else {
              System.out.println(lohn / 100 * ALVprozent);
         }
-        
     }
 
     static void ALV2(double lohn){
