@@ -1,4 +1,5 @@
 public class Tierverwaltung {
+    public String tierart;
    public String name;
     public String fellfarbe;
     public String alter;
