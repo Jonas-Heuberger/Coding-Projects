@@ -16,6 +16,4 @@ public class Linear extends Werte {
         }
     }
 
-
-
 }
