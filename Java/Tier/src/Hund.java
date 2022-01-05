@@ -3,8 +3,6 @@ public class Hund extends Tierverwaltung {
     public Hund(String tierart, String name, String fellfarbe, String alter, String geschlecht,String gewicht, String geräusch) {
         super(tierart, name, fellfarbe, alter, geschlecht, gewicht, geräusch);
 
-
-
     }
     void pfoteGeben(){
         System.out.println("Hund gibt Pfote");
