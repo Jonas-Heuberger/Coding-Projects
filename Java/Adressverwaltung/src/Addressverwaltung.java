@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class Addressverwaltung {
     public static void main(String[] args) {
 
         AdressItem userAdresse = AdressItem();
