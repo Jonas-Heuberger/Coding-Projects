@@ -16,8 +16,6 @@ public class Addressverwaltung {
     }
 
     public static AdressItem AdressItem(){
-        System.out.println("geben Sie Ihre ID ein: ");
-        String userId = AbrageString();
 
         System.out.println("geben Sie Ihren Nachname ein: ");
         String userNachname = AbrageString();
@@ -36,7 +34,7 @@ public class Addressverwaltung {
 
         checkInput();
 
-        AdressItem userAdresse = new AdressItem(userId, userNachname, userVorname, userStrasse, userPLZ, userOrt);
+        AdressItem userAdresse = new AdressItem(userNachname, userVorname, userStrasse, userPLZ, userOrt);
         return userAdresse;
     }
 

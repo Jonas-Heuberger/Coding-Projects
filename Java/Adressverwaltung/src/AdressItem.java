@@ -3,15 +3,14 @@ import java.util.Scanner;
 public class AdressItem {
     //Attribute
 
-    String id;
+    int id;
     String nachname;
     String vorname;
     String strasse;
     String plz;
     String ort;
 
-    public AdressItem(String id, String nachname, String vorname, String strasse, String plz, String ort) {
-        this.id = id;
+    public AdressItem(String nachname, String vorname, String strasse, String plz, String ort) {
         this.nachname = nachname;
         this.vorname = vorname;
         this.strasse = strasse;
@@ -20,6 +19,8 @@ public class AdressItem {
     }
 
     void edit(){
+        id = AbrageINT();
+
 
 
     }
@@ -28,6 +29,12 @@ public class AdressItem {
         Scanner scanner = new Scanner(System.in);
         String txt = scanner.next();
         return txt;
+    }
+
+    public static int AbrageINT(){
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        return num;
     }
 
 
