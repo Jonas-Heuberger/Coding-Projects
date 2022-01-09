@@ -7,4 +7,8 @@ public class Hund extends Tierverwaltung {
     void pfoteGeben(){
         System.out.println("Hund gibt Pfote");
     }
+
+    public static void wuff(){
+        System.out.println("wuff wuff");
+    }
 }

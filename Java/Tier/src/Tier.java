@@ -10,7 +10,6 @@ public class Tier {
         k.geräuschErzeugen(k.geräusch);
         k.schlafen(k.tierart);
         k.schnurren();
-
-
     }
+
 }
