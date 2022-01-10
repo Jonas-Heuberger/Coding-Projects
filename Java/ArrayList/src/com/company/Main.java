@@ -36,4 +36,4 @@ public class Main {
         String s = scanner.nextLine();
         return s;
     }
-}
+}   
