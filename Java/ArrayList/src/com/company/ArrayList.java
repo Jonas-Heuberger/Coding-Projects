@@ -9,24 +9,16 @@ public class ArrayList {
 	// write your code here
 
 
-        int x = 1;
-        while (true) {
-            System.out.println("Auto 1");
-            String car1 = abfrage();
 
-            System.out.println("Auto 2");
-            String car2 = abfrage();
-
-            System.out.println("Auto 3");
-            String car3 = abfrage();
-
+        for (int i = 0; true; i++) {
+            System.out.println("Auto " + i);
+            String car = abfrage();
 
             java.util.ArrayList<String> cars = new java.util.ArrayList<>();
-            cars.add(car1);
-            cars.add(car2);
-            cars.add(car3);
-            System.out.println(cars);
-            System.out.println(cars.get(1));
+            OOP c = new OOP(car);
+
+            System.out.println(cars + " " + i);
+            System.out.println(cars.get(i));
 
             System.out.println(cars.contains("Mercedes"));
 
