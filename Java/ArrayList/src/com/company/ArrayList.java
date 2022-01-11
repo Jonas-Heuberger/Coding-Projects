@@ -1,17 +1,16 @@
 package com.company;
 
 import java.util.Scanner;
-import java.util.ArrayList;
 
 
-public class Main {
+public class ArrayList {
 
     public static void main(String[] args) {
 	// write your code here
 
 
         int x = 1;
-        for (int i = 0; i < x; i++) {
+        while (true) {
             System.out.println("Auto 1");
             String car1 = abfrage();
 
@@ -21,13 +20,16 @@ public class Main {
             System.out.println("Auto 3");
             String car3 = abfrage();
 
-            ArrayList<String> cars = new ArrayList<String>();
+
+            java.util.ArrayList<String> cars = new java.util.ArrayList<>();
             cars.add(car1);
             cars.add(car2);
             cars.add(car3);
             System.out.println(cars);
             System.out.println(cars.get(1));
-            i--;
+
+            System.out.println(cars.contains("Mercedes"));
+
         }
     }
 
@@ -36,4 +38,4 @@ public class Main {
         String s = scanner.nextLine();
         return s;
     }
-}   
+}
