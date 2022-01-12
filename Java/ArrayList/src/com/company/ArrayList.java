@@ -1,9 +1,9 @@
 package com.company;
 
-import java.util.Scanner;
+import java.util.List;
 
 
-public class ArrayList {
+public class ArrayList<O> {
 
     public static void main(String[] args) {
 	// write your code here
@@ -11,23 +11,14 @@ public class ArrayList {
 
 
         for (int i = 0; true; i++) {
-            System.out.println("Auto " + i);
-            String car = abfrage();
 
-            java.util.ArrayList<String> cars = new java.util.ArrayList<>();
-            OOP c = new OOP(car);
+            ArrayList<OOP> cars = new ArrayList <OOP>();
+            OOP c = new OOP();
 
-            System.out.println(cars + " " + i);
-            System.out.println(cars.get(i));
-
-            System.out.println(cars.contains("Mercedes"));
-
+            if (i >= 5){
+                break;
+            }
+            System.out.println(cars);
         }
-    }
-
-    static String abfrage(){
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
-        return s;
     }
 }
