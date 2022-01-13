@@ -22,7 +22,6 @@ public class Einkaufsliste {
                 break;
             }
         }
-
     }
     private static String abfrage(){
         Scanner scanner = new Scanner(System.in);

@@ -5,14 +5,9 @@ import java.util.Scanner;
 
 public class Verwaltung implements Serializable {
 
-
-
-
-
     public static int id = 1;
 
     List<Storage> items = new ArrayList<>();
-
 
    public static String abfrage(){
         Scanner scanner = new Scanner(System.in);
