@@ -28,7 +28,6 @@ public class Verwaltung implements Serializable {
         id++;
         items.add(it);
        userInterface();
-
     }
 
   public  void editItem(){
@@ -37,6 +36,7 @@ public class Verwaltung implements Serializable {
 
         System.out.println("Wert eingeben: ");
         String tempj = abfrage();
+
         Storage temp = items.get(userId);
         Storage it = new Storage(temp.id-1, tempj);
         items.set(userId-1, it);
