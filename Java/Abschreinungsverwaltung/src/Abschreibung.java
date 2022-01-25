@@ -2,16 +2,26 @@ import java.util.Scanner;
 
 public class Abschreibung {
 
+    double betrag = abfrageDouble();
+
+    int alter = abfrageINT();
+
+    int zeitspanne = abfrageINT();
+
+    double prozentsatz = abfrageDouble();
+
     Linear l = new Linear(betrag, alter, zeitspanne);
     Degressiv d = new Degressiv(betrag, alter, zeitspanne, prozentsatz);
 
 
     public void addLinear(){
-
+       double betrag = l.linear(l.betrag, l.alter, l.zeitspanne);
+        System.out.println(betrag);
     }
 
     public void addDegressiv(){
-
+       double betrag = d.degressiv(d.betrag, d.alter, d.prozentsatz);
+        System.out.println(betrag);
     }
 
     public static double abfrageDouble(){
@@ -37,11 +47,9 @@ public class Abschreibung {
         int userInput = abfrageINT();
 
         switch (userInput){
-            case 1-> addItem();
-            case 2-> editItem();
-            case 3-> showItem();
-            case 4-> deleteItem();
-            case 5 -> showItemOverYear();
+            case 1-> addLinear();
+            case 2-> addDegressiv();
+
             default -> {
                 System.out.println("ungültiger Input");
                 userInterface();

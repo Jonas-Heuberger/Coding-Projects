@@ -15,5 +15,4 @@ public class Linear extends Werte {
             System.out.println("Linear Jahr " + i + ": " + betrag);
         }
     }
-
 }
