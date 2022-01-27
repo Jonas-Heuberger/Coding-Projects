@@ -1,27 +1,37 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Abschreibung {
 
-    double betrag = abfrageDouble();
-
-    int alter = abfrageINT();
-
-    int zeitspanne = abfrageINT();
-
-    double prozentsatz = abfrageDouble();
-
-    Linear l = new Linear(betrag, alter, zeitspanne);
-    Degressiv d = new Degressiv(betrag, alter, zeitspanne, prozentsatz);
-
+    List<Abschreibung> abschreibung = new ArrayList<>();
 
     public void addLinear(){
-       double betrag = l.linear(l.betrag, l.alter, l.zeitspanne);
-        System.out.println(betrag);
+
+        double betrag = abfrageDouble();
+
+        int alter = abfrageINT();
+
+        int zeitspanne = abfrageINT();
+
+       double result = l.linear(betrag, alter, zeitspanne);
+        System.out.println(result);
     }
 
     public void addDegressiv(){
-       double betrag = d.degressiv(d.betrag, d.alter, d.prozentsatz);
-        System.out.println(betrag);
+
+        double betrag = abfrageDouble();
+
+        int alter = abfrageINT();
+
+        int zeitspanne = abfrageINT();
+
+        double prozentsatz = abfrageDouble();
+
+        Degressiv d = new Degressiv(betrag, alter, zeitspanne, prozentsatz),
+
+        double result = d.degressiv(betrag, alter, prozentsatz);
+        System.out.println(result);
     }
 
     public static double abfrageDouble(){
@@ -38,8 +48,8 @@ public class Abschreibung {
 
     public void userInterface(){
         System.out.println("Willkommen");
-        System.out.println("1: Hinzufügen");
-        System.out.println("2: Bearbeiten");
+        System.out.println("1: linear abschreiben");
+        System.out.println("2: degressiv abschreiben");
         System.out.println("3: Anzeigen");
         System.out.println("4: Löschen");
         System.out.println("5: aelter als ein Jahr");
