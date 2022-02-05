@@ -8,6 +8,4 @@ public class Anlage {
         this.alter = alter;
         this.zeitspanne = zeitspanne;
     }
-
-
 }
