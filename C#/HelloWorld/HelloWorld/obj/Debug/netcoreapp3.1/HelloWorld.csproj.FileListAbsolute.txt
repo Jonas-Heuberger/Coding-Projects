@@ -1,0 +1,13 @@
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.deps.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.runtimeconfig.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.runtimeconfig.dev.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/bin/Debug/netcoreapp3.1/HelloWorld.pdb
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.csproj.AssemblyReference.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.AssemblyInfoInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.AssemblyInfo.cs
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.csproj.CoreCompileInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.pdb
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/HelloWorld/HelloWorld/obj/Debug/netcoreapp3.1/HelloWorld.genruntimeconfig.cache
