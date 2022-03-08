@@ -1,9 +1,16 @@
 * {
 	margin: 0px;
 	padding: 0px;
-	background-color: black;
+	box-sizing: border-box;
+	text-decoration: none;
 	color: aqua;
 	/* Google Fonts: Roboto */
 	font-family: 'Roboto', sans-serif;
-	
+}
+
+/* navbar styling */
+.navbar{
+	position: fixed;
+	width: 100%;
+	background: crimson;
 }
