@@ -9,8 +9,30 @@
 }
 
 /* navbar styling */
-.navbar{
+.navbar {
 	position: fixed;
 	width: 100%;
-	background: crimson;
+	background: #20201E;
+}
+
+.Home {
+
+
+}
+
+.About {
+	
+
+}
+
+.Skills {
+
+}
+
+.Projects {
+
+}
+
+.Contact {
+
 }
