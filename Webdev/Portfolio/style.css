@@ -6,33 +6,44 @@
 	color: aqua;
 	/* Google Fonts: Roboto */
 	font-family: 'Roboto', sans-serif;
+	overflow: auto;
 }
 
 /* navbar styling */
+
+
 .navbar {
 	position: fixed;
 	width: 100%;
-	background: #20201E;
+	top: 0%;
+	background: #20201E;	
+	display: inline-block;
+	display: block;
+
 }
 
+
+/* Style for Home section */
 .Home {
 
-
 }
 
+/* Style for About section */
 .About {
-	
 
 }
 
+/* Style for Skills section */
 .Skills {
 
 }
 
+/* Style for Projects section */
 .Projects {
 
 }
 
+/* Style for Contact section */
 .Contact {
 
 }
