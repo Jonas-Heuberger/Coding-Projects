@@ -1,6 +1,6 @@
 * {
 	margin: 0px;
-	padding: 0px;
+	padding: 1px;
 	box-sizing: border-box;
 	text-decoration: none;
 	color: aqua;
@@ -11,17 +11,31 @@
 
 /* navbar styling */
 
-
-.navbar {
-	position: fixed;
-	width: 100%;
-	top: 0%;
-	background: #20201E;	
-	display: inline-block;
-	display: block;
-
+.image {
+	padding: 1;
+	margin: 1;
 }
 
+.navbar {
+	background-color: #20201E;
+	
+}
+
+.navbar li {
+	display: inline;
+
+}
+.navbar li a:hover {
+	background-color: grey;
+  }
+
+.title {
+	text-align: center;
+}
+
+.content {
+	background-color: #2F2B2B;
+}
 
 /* Style for Home section */
 .Home {
