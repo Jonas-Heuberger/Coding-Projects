@@ -2,46 +2,68 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	text-decoration: none;
 	color: aqua;
 	/* Google Fonts: Roboto */
 	font-family: 'Roboto', sans-serif;
-	overflow: auto;
 }
 
 /* navbar styling */
 
-.image {
-	padding: 1;
-	margin: 1;
-	
-}
-
 .navbar {
-	background-color: #20201E;
+	padding-left: 1%;
+	padding-top: 1%;
+	background-color: #2F2B2B;
+	display: flex;
+	position: relative;
+}
+
+.navbar .image {
 	
+	display: flex;
 }
 
-.navbar li {
-	display: inline;
+.navbar p {
+	padding: 5%;
+	display: flex;
+}
+ nav {
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+	background-color: #2F2B2B;
+}
+
+.navbar ul {
 	float: right;
-
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
 }
-.navbar li a:hover {
-	background-color: grey;
-  }
+
+nav li {
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+
+/* Style for main content */
 
 .title {
 	text-align: center;
 }
 
 .content {
-	background-color: #2F2B2B;
+	background-color: red;
+	padding: 2%;
+	text-align: center;
 }
 
 /* Style for Home section */
 .Home {
-
+	
 }
 
 /* Style for About section */
