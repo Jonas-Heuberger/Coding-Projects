@@ -1,52 +1,43 @@
 * {
+	/* Google Fonts: Roboto */
+	font-family: 'Roboto', sans-serif;
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	color: aqua;
-	/* Google Fonts: Roboto */
-	font-family: 'Roboto', sans-serif;
+	
 }
-
+/* header styling */
+.img p {
+	
+	display: center;
+}
 /* navbar styling */
 
 .navbar {
-	padding-left: 1%;
-	padding-top: 1%;
-	background-color: #2F2B2B;
 	display: flex;
-	position: relative;
+	justify-content: space-between;
 }
 
-.navbar .image {
-	
-	display: flex;
-}
 
-.navbar p {
-	padding: 5%;
-	display: flex;
-}
- nav {
-	display: flex;
-	justify-content: space-around; 
-	align-items: center;
-	background-color: #2F2B2B;
-}
 
-.navbar ul {
-	float: right;
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-}
-
-nav li {
-	list-style: none;
-}
-
-nav a {
+.navbar li, a {
 	text-decoration: none;
 }
+
+.navbar li {
+	float: right;
+	display: inline;
+  }
+
+  .navbar li a:hover {
+	background-color: #111;
+  }
+
+
+
+
+
+ 
 
 
 /* Style for main content */
