@@ -1,4 +1,8 @@
-public class Worker {
+package Lohnverwaltung;
+
+import java.io.Serializable;
+
+abstract public class Worker implements Serializable {
     String firstname, lastname;
     double salary;
 
