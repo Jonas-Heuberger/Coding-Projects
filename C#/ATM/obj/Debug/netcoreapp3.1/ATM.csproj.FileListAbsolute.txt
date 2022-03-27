@@ -1,0 +1,13 @@
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/bin/Debug/netcoreapp3.1/ATM.deps.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/bin/Debug/netcoreapp3.1/ATM.runtimeconfig.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/bin/Debug/netcoreapp3.1/ATM.runtimeconfig.dev.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/bin/Debug/netcoreapp3.1/ATM.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/bin/Debug/netcoreapp3.1/ATM.pdb
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.csproj.AssemblyReference.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.AssemblyInfoInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.AssemblyInfo.cs
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.csproj.CoreCompileInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.pdb
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.genruntimeconfig.cache
