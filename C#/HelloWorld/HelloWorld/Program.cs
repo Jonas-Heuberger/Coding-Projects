@@ -70,7 +70,6 @@ namespace HelloWorld
 			return Noten;
 		}
 
-
 		 static void Ausgabe(int[] Noten)
 		{
 			Console.WriteLine("Tausender: " + Noten[0]);
@@ -82,8 +81,6 @@ namespace HelloWorld
 			Console.WriteLine("Fünfer: " + Noten[6]);
 			Console.WriteLine("Zweier:  " + Noten[7]);
 			Console.WriteLine("Einer: " + Noten[8]);
-
 		}
 	}
 }
-
