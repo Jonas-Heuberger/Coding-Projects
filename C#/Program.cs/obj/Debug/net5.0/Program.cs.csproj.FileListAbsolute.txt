@@ -1,0 +1,15 @@
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/bin/Debug/net5.0/Program.cs.deps.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/bin/Debug/net5.0/Program.cs.runtimeconfig.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/bin/Debug/net5.0/Program.cs.runtimeconfig.dev.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/bin/Debug/net5.0/Program.cs.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/bin/Debug/net5.0/ref/Program.cs.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/bin/Debug/net5.0/Program.cs.pdb
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/Program.cs.csproj.AssemblyReference.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/Program.cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/Program.cs.AssemblyInfoInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/Program.cs.AssemblyInfo.cs
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/Program.cs.csproj.CoreCompileInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/Program.cs.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/ref/Program.cs.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/Program.cs.pdb
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/Program.cs/obj/Debug/net5.0/Program.cs.genruntimeconfig.cache
