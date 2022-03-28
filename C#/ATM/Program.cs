@@ -66,7 +66,8 @@ namespace ATM
 			}
 			return Noten;
 		}
-						static void Ausgabe(int[] Noten)
+
+	static void Ausgabe(int[] Noten)
 		{
 			Console.WriteLine("Tausender: " + Noten[0]);
 			Console.WriteLine("Zweihunderter: " + Noten[1]);
