@@ -2,7 +2,6 @@
 
 namespace ATM
 {
-
 	class Programm
 	{
 		static void Main(string[] args)
@@ -67,7 +66,7 @@ namespace ATM
 			}
 			return Noten;
 		}
-				static void Ausgabe(int[] Noten)
+						static void Ausgabe(int[] Noten)
 		{
 			Console.WriteLine("Tausender: " + Noten[0]);
 			Console.WriteLine("Zweihunderter: " + Noten[1]);
@@ -79,7 +78,5 @@ namespace ATM
 			Console.WriteLine("Zweier:  " + Noten[7]);
 			Console.WriteLine("Einer: " + Noten[8]);
 		}
-
 	}
-
 }
