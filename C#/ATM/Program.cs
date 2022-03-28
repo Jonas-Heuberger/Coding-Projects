@@ -8,15 +8,16 @@ namespace ATM
 		{
 			Console.WriteLine("Geben Sie eine zahl ein: ");
 			int betrag = Abfrage();
-			int[] Noten = berechnen(betrag);
+			int[] Noten = Berechnen(betrag);
 			Ausgabe(Noten);
 		}
+
 		static int Abfrage()
 		{
 			int zahl = Convert.ToInt32(Console.ReadLine());
 			return zahl;
 		}
-		static int[] berechnen(int betrag)
+		static int[] Berechnen(int betrag)
 		{
 			int[] Noten = new int[9];
 
