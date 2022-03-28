@@ -9,7 +9,7 @@ namespace HelloWorld
 		{
 			Console.WriteLine("Geben Sie eine zahl ein: ");
 			int betrag = Abfrage();
-			int[] Noten = berechnen(betrag);
+			int[] Noten = Berechnen(betrag);
 			Ausgabe(Noten);
 		}
 		 static int Abfrage()
@@ -18,7 +18,7 @@ namespace HelloWorld
 			return zahl;
 		}
 
-		 static int[] berechnen(int betrag)
+		 static int[] Berechnen(int betrag)
 		{
 			int[] Noten = new int[9];
 
@@ -84,8 +84,6 @@ namespace HelloWorld
 			Console.WriteLine("Einer: " + Noten[8]);
 
 		}
-
 	}
-
 }
 
