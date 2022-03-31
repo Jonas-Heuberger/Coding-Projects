@@ -9,17 +9,17 @@ import UIKit
 
 class Calculator: UIViewController {
     override func viewDidLoad() {
-        super.viewDidLoad();
+        super.viewDidLoad()
         view.backgroundColor = UIColor.gray;
         
-        let displayNum = UILabel(frame: CGRect(x:70, y:70, width: view.frame.size.width - 140, height: 50));
+        let displayNum = UILabel(frame: CGRect(x:70, y:70, width: view.frame.size.width - 140, height: 50))
         
-        displayNum.backgroundColor = UIColor.black;
-        displayNum.font = UIFont(name: "Arial", size: 28);
-        displayNum.textColor = UIColor.white;
-        displayNum.textAlignment = NSTextAlignment.center;
-        displayNum.text = "label";
-        displayNum.adjustsFontSizeToFitWidth = true;
+        displayNum.backgroundColor = UIColor.black
+        displayNum.font = UIFont(name: "Arial", size: 28)
+        displayNum.textColor = UIColor.white
+        displayNum.textAlignment = NSTextAlignment.center
+        displayNum.text = "label"
+        displayNum.adjustsFontSizeToFitWidth = true
         
         view.addSubview(displayNum);
         
