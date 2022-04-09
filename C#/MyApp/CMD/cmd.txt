@@ -1,0 +1,8 @@
+// create application
+	dotnet new console -o MyApp -f net6.0
+
+// go to the directory
+	cd MyApp
+
+// run the application
+	dotnet run

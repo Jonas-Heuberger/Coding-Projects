@@ -1,0 +1,8 @@
+// create mvc application
+		dotnet new mvc -o MvcMovie
+
+// open project in VS Code 
+		code -r MvcMovie
+
+// run project
+		ctrl + F5

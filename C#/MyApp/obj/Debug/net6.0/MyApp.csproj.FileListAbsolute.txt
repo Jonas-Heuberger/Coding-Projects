@@ -1,0 +1,15 @@
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/bin/Debug/net6.0/MyApp
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/bin/Debug/net6.0/MyApp.deps.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/bin/Debug/net6.0/MyApp.runtimeconfig.json
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/bin/Debug/net6.0/MyApp.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/bin/Debug/net6.0/MyApp.pdb
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/MyApp.csproj.AssemblyReference.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/MyApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/MyApp.AssemblyInfoInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/MyApp.AssemblyInfo.cs
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/MyApp.csproj.CoreCompileInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/MyApp.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/refint/MyApp.dll
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/MyApp.pdb
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/MyApp.genruntimeconfig.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/MyApp/obj/Debug/net6.0/ref/MyApp.dll

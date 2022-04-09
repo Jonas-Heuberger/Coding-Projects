@@ -11,3 +11,4 @@
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.dll
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.pdb
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/obj/Debug/netcoreapp3.1/ATM.genruntimeconfig.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ATM/bin/Debug/netcoreapp3.1/ATM
