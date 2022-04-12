@@ -1,0 +1,8 @@
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.csproj.AssemblyReference.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.AssemblyInfoInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.AssemblyInfo.cs
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.csproj.CoreCompileInputs.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.MvcApplicationPartsAssemblyInfo.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.RazorAssemblyInfo.cache
+/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.RazorAssemblyInfo.cs
