@@ -24,12 +24,10 @@
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.pdb
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/obj/Debug/net6.0/ContosoUniversity.genruntimeconfig.cache
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/obj/Debug/net6.0/ref/ContosoUniversity.dll
-/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Humanizer.dll
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Microsoft.Data.SqlClient.dll
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
-/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll
 /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ContosoUniversity/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
