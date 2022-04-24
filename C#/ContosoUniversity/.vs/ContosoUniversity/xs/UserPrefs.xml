@@ -1,9 +1,14 @@
 ﻿<Properties StartupConfiguration="{0B9AA39D-97CD-49EE-9E40-3DCB079A8036}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="appsettings.json" Line="12" Column="22" />
-      <File FileName="Startup.cs" Line="3" Column="36" />
-      <File FileName="Program.cs" Line="24" Column="5" />
+      <File FileName="Startup.cs" Line="24" Column="1" />
+      <File FileName="Program.cs" Line="5" Column="36" />
       <File FileName="Data/SchoolContext.cs" Line="21" Column="10" />
       <File FileName="Data/DbInitializer.cs" Line="74" Column="2" />
       <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
@@ -21,20 +26,13 @@
         <State name="__root__">
           <Node name="ContosoUniversity" expanded="True">
             <Node name="ContosoUniversity" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -44,11 +42,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ContosoUniversity PreferredExecutionTarget="/Applications/Firefox Developer Edition.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ContosoUniversity PreferredExecutionTarget="/Applications/Firefox Developer Edition.app" />
 </Properties>
