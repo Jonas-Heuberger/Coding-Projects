@@ -6,9 +6,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="appsettings.json" Line="12" Column="22" />
+      <File FileName="appsettings.json" Line="12" Column="4" />
       <File FileName="Startup.cs" Line="24" Column="1" />
-      <File FileName="Program.cs" Line="5" Column="36" />
+      <File FileName="Program.cs" Line="14" Column="1" />
       <File FileName="Data/SchoolContext.cs" Line="21" Column="10" />
       <File FileName="Data/DbInitializer.cs" Line="74" Column="2" />
       <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
@@ -27,11 +27,6 @@
           <Node name="ContosoUniversity" expanded="True">
             <Node name="ContosoUniversity" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
               <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
