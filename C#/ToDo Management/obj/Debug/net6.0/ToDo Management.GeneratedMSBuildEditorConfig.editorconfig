@@ -8,49 +8,49 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ToDo_Management
 build_property.RootNamespace = ToDo_Management
-build_property.ProjectDir = /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ToDo Management/
+build_property.ProjectDir = C:\Users\JH1814\Documents\GitHub\Coding-Projects\C#\ToDo Management\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/jonasheuberger/Documents/GitHub/Coding-Projects/C#/ToDo Management
+build_property.MSBuildProjectDirectory = C:\Users\JH1814\Documents\GitHub\Coding-Projects\C#\ToDo Management
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Areas/Identity/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Shared/_LoginPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/ToDo/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVG9Eby9JbmRleC5jc2h0bWw=
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/ToDo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9Eb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonasheuberger/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-bg1ofi6nak
+[C:/Users/JH1814/Documents/GitHub/Coding-Projects/C\#/ToDo Management/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-hr25cvzk5j
