@@ -1,0 +1,49 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{   
+}
+<form asp-action="CreateEdit"> 
+    <button type="submit" class="btn btn-primary ">+ Create Employee</button>
+</form>
+
+<hr />
+
+    <table class="table table-dark table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        @{
+            foreach(Employee employee in ViewBag.Employees)
+            {
+                <tr>
+                <td>
+                @employee.Id
+                </td>
+                <td>@employee.Prename</td>
+                <td>@employee.Lastname</td>
+                <td>
+                    <form asp-action="CreateEdit" asp-route-id="@employee.Id">
+                        <button type="submit" class="btn-warning">Edit</button>
+                    </form>
+                </td>
+                
+                <td>
+                <form asp-action="DeleteEmployee" asp-route-id="@employee.Id">
+                        <button type="submit" class="btn-danger">Delete</button>
+                    </form>
+                    </td>
+                </tr>
+            }
+        }
+        </tbody>
+    </table>
+
