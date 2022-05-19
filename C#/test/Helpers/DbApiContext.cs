@@ -1,6 +1,16 @@
-﻿namespace test.Helpers
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace test.Helpers
 {
-    public class DbApiContext
+    public class DbApiContext : DbContext
     {
-    }
-}
+        public DbApiContext()
+        {
+        }
+        public DbApiContext(DbContextOptions<DbApiContext> options)
+        : base(options)
+        {
+        }
+     }
+   }
+
