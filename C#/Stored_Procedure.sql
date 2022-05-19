@@ -120,3 +120,59 @@ BEGIN
 		FROM tbl_Schueler
 		ORDER BY Nachname, Vorname
 	END
+	GO
+
+	CREATE PROCEDURE usp_MailList
+	@SchuelerID uniqueidentifier
+	AS
+	BEGIN
+		SELECT
+		Mail
+		FROM tbl_Mail
+		WHERE SchuelerID = @SchuelerID
+	END
+	GO
+
+	CREATE PROCEDURE usp_MailAdd
+	@SchuelerID uniqueidentifier,
+	@Mail nvarchar(100)
+	AS
+	BEGIN
+	INSERT INTO tbl_Mail
+	(
+	rowguid,
+	SchuelerID,
+	Mail
+	)
+	VALUES
+	(
+	(newid()),
+	@SchuelerID,
+	@Mail
+	)
+	END
+	GO
+
+	CREATE PROCEDURE usp_MailDelete
+	@SchuelerID uniqueidentifier,
+	@Mail nvarchar(100)
+	AS
+	BEGIN
+	DELETE tbl_Mail
+	WHERE SchuelerID = @SchuelerID AND Mail = @Mail
+	END
+	GO
+
+	CREATE PROCEDURE usp_MailEdit
+	@SchuelerID uniqueidentifier,
+	@Mail nvarchar(100) = NULL,
+	@NewMail nvarchar(100) = NULL
+	AS
+	BEGIN
+	UPDATE tbl_Mail
+	SET
+		Mail = ISNULL(@NewMail, Mail)
+	WHERE SchuelerID = @SchuelerID AND Mail = @Mail
+	END
+	GO
+	
