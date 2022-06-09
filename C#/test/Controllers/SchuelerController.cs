@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using test.Helpers;
 using test.Models;
@@ -6,14 +5,13 @@ using test.Models;
 namespace test.Controllers
    
 {
-
     public class SchuelerController : ODataController
     {
         private DbApiContext _dbApiContext;
 
         public SchuelerController(DbApiContext dbApiContext)
         {
-            _dbApiContext = new dbApiContext;
+            _dbApiContext = dbApiContext;
         }
 
         public IQueryable<Schueler> Get(){
