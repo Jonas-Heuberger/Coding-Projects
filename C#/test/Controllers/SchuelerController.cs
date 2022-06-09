@@ -17,5 +17,11 @@ namespace test.Controllers
         public IQueryable<Schueler> Get(){
             return _dbApiContext.Schueler.AsQueryable();
         }
+
+        public SingleResult<Schueler> Get([FromODataUri] Guid key)
+        {
+            var result = _dbApiContext.Schueler.Where(s => s.rowguid == key);
+            return SingleResult.Create(result);
+        }
 }
 }
