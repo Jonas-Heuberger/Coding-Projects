@@ -7,7 +7,7 @@ namespace test.Helpers
 
        private readonly ConcurrentDictionary<string, RefreshToken> _userRefreshToken;
 
-public IImutableDirectionary<string, RefreshToken> UserRefreshToken => _userRefreshToken;
+public IImutableDirectionary<string, RefreshToken> UserRefreshTokenReadOnlyDictionay => _userRefreshTokens.ToImmutableDictionary();
 
          public JwtAuthManager(JwtTokenConfig jwtTokenConfig)
          {
@@ -117,30 +117,6 @@ public IImutableDirectionary<string, RefreshToken> UserRefreshToken => _userRefr
                             throw;
                         }
                         return (principal, (JwtSecurityToken)validatedToken);
-
-
-
-
-                        if (!_userRefreshTokens.TryGetValue(refreshToken, out var token))
-                        {
-                            return new JwtResult{
-                                Error = "Invalid refresh token"
-                            };
-                        }
-
-                        if (token.ExpireAt < now)
-                        {
-                            return new JwtResult{
-                                Error = "Refresh token expired"
-                            };
-                        }
-
-                        var claims = new[]
-                        {
-                            new Claim(JwtRegisteredClaimNames.Sub, token.UserName),
-                            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                            new Claim(JwtRegisteredClaimNames.Iat, now.ToTimestamp().ToString())
-                        };
 
                         var jwtToken = new JwtSecurityToken(
                             _jwtTokenConfig.Issuer,
