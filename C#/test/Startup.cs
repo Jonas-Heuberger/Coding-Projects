@@ -21,6 +21,11 @@ namespace test
         {
             services.AddDbContext<DbApiContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("localhost")));
+
+                var jwtTokenConfig = Configuration.GetSection("JwtToken").Get<JwtTokenConfig>();
+                services.AddSingleton(jwtTokenConfig);
+                services.AddAuthentication();
+                
         services.AddRouting();
             services.AddMvc();
 
