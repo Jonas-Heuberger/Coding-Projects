@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
 using test.Helpers;
+using test.Models;
 
 namespace test
 {
@@ -43,6 +44,7 @@ namespace test
         private static IEdmModel GetEdmModel()
         {
             var builder = new ODataConventionModelBuilder();
+            builder.EntitySet<Schueler>("Schueler");
             return builder.GetEdmModel();  
         }
     }
