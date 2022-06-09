@@ -24,8 +24,26 @@ namespace test
 
                 var jwtTokenConfig = Configuration.GetSection("JwtToken").Get<JwtTokenConfig>();
                 services.AddSingleton(jwtTokenConfig);
-                services.AddAuthentication();
-                
+                services.AddAuthentication( x => {
+                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                }).AddJwtBearer( x => 
+                {
+                    x.RequireHttpsMetadata = true;
+                    x.SaveToken = true;
+                    x.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidIssuer = jwtTokenConfig.Issuer,
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(jwtTokenConfig.Secret)),
+                        ValidateAudience = true,
+                        ValidAudience = jwtTokenConfig.Audience,
+                        ValidateLifetime = true,
+                        ClockSkew = TimeSpan.FromMinutes(1)
+                    };   
+                });
+
         services.AddRouting();
             services.AddMvc();
 
