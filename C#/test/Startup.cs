@@ -28,11 +28,16 @@ namespace test
                 .Count().Filter().Expand().Select().OrderBy().SetMaxTop(null)
                 .AddRouteComponents("", GetEdmModel())
                 );
+                services.AddHtttpClient();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}");
+            });
         }
 
         private static IEdmModel GetEdmModel()
