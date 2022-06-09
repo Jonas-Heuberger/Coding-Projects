@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using test.Models;
+
 
 namespace test.Helpers
 {
@@ -11,6 +13,8 @@ namespace test.Helpers
         : base(options)
         {
         }
+
+        public virtual DbSet<Schueler> Schueler { get; set; }
      }
    }
 

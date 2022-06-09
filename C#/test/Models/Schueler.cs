@@ -2,6 +2,8 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
+
+// see model with $metadata in: http://localhost:5000/$metadata
 namespace test.Models
 {
     [Table("tbl_Schueler", Schema = "dbo")]
