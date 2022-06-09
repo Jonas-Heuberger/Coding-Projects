@@ -16,9 +16,4 @@ namespace test.Models
         public int? PLZ { get; set; } // ? = nullable
         public string Ort { get; set; }
     }
-        public Schueler()
-        {
-        }
-
-
 }
