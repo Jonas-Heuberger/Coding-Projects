@@ -28,7 +28,7 @@ namespace test
                 .Count().Filter().Expand().Select().OrderBy().SetMaxTop(null)
                 .AddRouteComponents("", GetEdmModel())
                 );
-                services.AddHtttpClient();
+                services.AddHttpClient();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
