@@ -17,7 +17,7 @@ public IImutableDirectionary<string, RefreshToken> UserRefreshTokenReadOnlyDicti
               
          }
 
-         public void RemoveExpireRefreshTokens(DateTime, now)
+         public void RemoveExpireRefreshTokens(DateTime now)
          {
              var expiredTokens = _userRefreshTokens.Where(x => x.Value.ExpireAt < now).ToList();
              foreach (var token in expiredTokens)
@@ -26,7 +26,7 @@ public IImutableDirectionary<string, RefreshToken> UserRefreshTokenReadOnlyDicti
              }
          }
 
-          public void RemoveRefreshTokenByUserName(string, userName)
+          public void RemoveRefreshTokenByUserName(string userName)
          {
              var expiredTokens = _userRefreshTokens.Where(x => x.Value.UserName == userName).ToList();
              foreach (var expiredToken in expiredTokens)
@@ -82,15 +82,15 @@ public IImutableDirectionary<string, RefreshToken> UserRefreshTokenReadOnlyDicti
                         }
 
                        if (!_userRefreshTokens.TryGetValue(refreshToken, out var existingRefreshToken)){
-                           retunr null;
+                           return null;
                        }
 
     
                         var userName = principal.Identity.Name;
                        return GenerateToken(username,principal.Claims.ToArray, now, url);
 
-                        public (ClaimsPrincipal, jwtSecurityToken) DecodeJwtToken(string token){
-                            ClaimsPrincipal = null,
+                         (ClaimsPrincipal, jwtSecurityToken) DecodeJwtToken(string token){
+                            ClaimsPrincipal = null;
                             SercurityToken validatedToken = null;
                         }
 
@@ -161,3 +161,4 @@ public IImutableDirectionary<string, RefreshToken> UserRefreshTokenReadOnlyDicti
                  
                 }   
     }
+}
