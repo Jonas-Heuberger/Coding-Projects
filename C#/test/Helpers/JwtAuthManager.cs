@@ -7,7 +7,6 @@ namespace test.Helpers
 
        private readonly ConcurrentDictionary<string, RefreshToken> _userRefreshToken;
 
-public IImutableDirectionary<string, RefreshToken> UserRefreshTokenReadOnlyDictionay => _userRefreshTokens.ToImmutableDictionary();
 
          public JwtAuthManager(JwtTokenConfig jwtTokenConfig)
          {
@@ -16,6 +15,8 @@ public IImutableDirectionary<string, RefreshToken> UserRefreshTokenReadOnlyDicti
              _secret = Encoding.ASCII.GetBytes(jwtTokenConfig.Secret);
               
          }
+public IImutableDirectionary<string, RefreshToken> UserRefreshTokenReadOnlyDictionay => _userRefreshTokens.ToImmutableDictionary();
+
 
          public void RemoveExpireRefreshTokens(DateTime now)
          {
