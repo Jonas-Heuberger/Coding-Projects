@@ -6,7 +6,7 @@ namespace test.Controllers
    
 {
     [Authorize()]
-     [EnableQuery(Pagesize = 10)]
+     [EnableQuery(Pagesize = 100)]
     public class SchuelerController : ODataController
     {
         private DbApiContext _dbApiContext;

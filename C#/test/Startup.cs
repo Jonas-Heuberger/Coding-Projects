@@ -45,7 +45,7 @@ namespace test
                 });
 
                 services.AddSingleton<JwtAuthManager, JwtAuthManager>();
-                //services.AddHostedService<JwtRefreshTokenCache>();
+                services.AddHostedService<JwtRefreshTokenCache>();
 
         services.AddRouting();
             services.AddMvc();
