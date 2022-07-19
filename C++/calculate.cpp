@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std;
-using namespace car;
-void ausgabe(int c){
-    cout << c;
-}
+
 
 int eingabe() {
     int a;
-    std::cin >> a;
-    return a;
+    cin >> a;
+    return a; 
 }
-
 
 int vearbeitung(int a, int b) {
     return a + b;
+}
+
+void ausgabe(int c){
+    cout << c;
 }
 
 void controller(){
@@ -23,6 +23,7 @@ void controller(){
 
     ausgabe(c);
 }
+
 
 int main()
 {
