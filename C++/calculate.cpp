@@ -15,7 +15,7 @@ int vearbeitung(int a, int b)
 
 void ausgabe(int c)
 {
-    cout << c;
+    cout << c << "\n";
 }
 
 void controller()
@@ -29,7 +29,7 @@ void controller()
 
 int main()
 {
-    cout << "Hello World";
+    cout << "Hello World \n";
 
     controller();
     return 0;
