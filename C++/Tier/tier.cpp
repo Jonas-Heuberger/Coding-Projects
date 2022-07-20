@@ -1,18 +1,36 @@
 #include <iostream>
 using namespace std;
 
-class Hund {
-    public:
+class Tier
+{
+
+public:
+    int age;
+    string name;
+    string race;
+};
+
+class Hund : Tier
+{
+public:
     int age;
     string name;
     string race;
 
-    void bark(){
+    void bark()
+    {
         cout << "wuff wuff";
     }
 };
 
-int main(){
+class Katze : Tier
+{
+
+public:
+};
+
+int main()
+{
     Hund golden;
     golden.age = 1;
     golden.name = "bello";
