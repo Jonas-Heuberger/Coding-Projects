@@ -4,22 +4,22 @@ using namespace std;
 class Cash
 {
 public:
-    int Tausender;
-    int Zweihunderter;
-    int Hunderter;
-    int Fünfziger;
-    int Zwanziger;
-    int Zehner;
-    int Fünfer;
-    int Zweier;
-    int Einer;
+    long Tausender;
+    long Zweihunderter;
+    long Hunderter;
+    long Fünfziger;
+    long Zwanziger;
+    long Zehner;
+    long Fünfer;
+    long Zweier;
+    long Einer;
 };
 
 void controller();
 
-int input()
+long input()
 {
-    int money;
+    long money;
     cin >> money;
     if (money <= 0)
     {
@@ -30,7 +30,7 @@ int input()
     return money;
 }
 
-Cash atm(int money)
+Cash atm(long money)
 {
     Cash cash;
 
@@ -99,7 +99,7 @@ void controller()
 {
     cout << "Geben Sie Ihren Betrag ein"
          << "\n";
-    int money = input();
+    long money = input();
     Cash cash = atm(money);
     output(cash);
 }
