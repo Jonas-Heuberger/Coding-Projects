@@ -26,8 +26,10 @@ public class Game {
                     i = 2;
                     break;
                 case "2":
-                    System.out.println("It is the year 2183 and humans have complete control over their solar system. \n Travel to the now human-friendly Mars and Venus is no longer a problem. Earth is now an empty shell of itself and no longer inhabitable. \n However, there is one big problem, the raw materials from Mars and Venus are running out faster than expected due to a new over population. \n You and a small team of researchers and scientists have made it your mission to explore the next most habitable planet (Homesteat III) to offer \n humans a possible new home. In the story you are the group leader and have to make important decisions for you and your group that lead to a goal.\n The fewer team members you lose, the higher the chance that you can defeat the final boss. Depending on the intelligence or strength you gain, \n you can create different endings.");
-                    System.out.println("Your team consists of 2 team members who are considered to be your extra lives (i.e. if they die, your team member will intercept your death instead). Make sure you don't lose any of your team members, good luck");
+                    System.out.println(
+                            "It is the year 2183 and humans have complete control over their solar system. \n Travel to the now human-friendly Mars and Venus is no longer a problem. Earth is now an empty shell of itself and no longer inhabitable. \n However, there is one big problem, the raw materials from Mars and Venus are running out faster than expected due to a new over population. \n You and a small team of researchers and scientists have made it your mission to explore the next most habitable planet (Homesteat III) to offer \n humans a possible new home. In the story you are the group leader and have to make important decisions for you and your group that lead to a goal.\n The fewer team members you lose, the higher the chance that you can defeat the final boss. Depending on the intelligence or strength you gain, \n you can create different endings.");
+                    System.out.println(
+                            "Your team consists of 2 team members who are considered to be your extra lives (i.e. if they die, your team member will intercept your death instead). Make sure you don't lose any of your team members, good luck");
                     System.out.println("You will find Weapons on your way these give you bonus Stats (Strenght");
                     break;
                 case "3":
@@ -40,6 +42,7 @@ public class Game {
             }
         }
     }
+
     // function to create the traveler and his mates
     public static void introduction() {
         Scanner scan = new Scanner(System.in);
@@ -51,15 +54,15 @@ public class Game {
         String t1name = scan.nextLine();
         System.out.println("Name your second Teammate");
         String t2name = scan.nextLine();
-        System.out.println("You have successfully landed on the planet Zerus and must now explore the planet. How do you want to proceed? ");
-        System.out.println("You see a small mountain to the north and a large forest on the other side. \n Which area do you want to go to?");
-
+        System.out.println(
+                "You have successfully landed on the planet Zerus and must now explore the planet. How do you want to proceed? ");
+        System.out.println(
+                "You see a small mountain to the north and a large forest on the other side. \n Which area do you want to go to?");
 
         Teammate t1 = new Teammate(t1name);
         Teammate t2 = new Teammate(t2name);
 
         Traveler traveler = new Traveler(hName);
-
 
         // call the Game function and deliver the traveler and his mates
         Game(traveler, t1, t2);
@@ -172,6 +175,7 @@ public class Game {
             }
         }
     }
+
     public static void su1Mission(Items items, Forest forest, Traveler traveler, Teammate t1, Teammate t2) {
         System.out.println(forest.missionreward);
         items.chickenWings[2]++;
@@ -227,7 +231,6 @@ public class Game {
         Enemy bear = new Enemy("bear", 5);
         // Scanner scan = new Scanner(System.in);
 
-
         checkCave(traveler, t1, t2, mountain, items);
 
     }
@@ -241,7 +244,8 @@ public class Game {
         Enemy dragon = new Enemy("dragon", 10);
 
         if (dragon.strength <= traveler.calcInteligence(items)) {
-            System.out.println("You have Talked with the Dragon and after a long Discustion hes not Attaking the Village again.");
+            System.out.println(
+                    "You have Talked with the Dragon and after a long Discustion hes not Attaking the Village again.");
 
             System.out.println("Concrats youve Won");
             int i = 1;
@@ -258,8 +262,7 @@ public class Game {
                     System.out.println("Wrong Input");
                 }
             }
-        }
-        else if (dragon.strength >= traveler.calcStrength(items)) {
+        } else if (dragon.strength >= traveler.calcStrength(items)) {
             System.out.println("You tried to fight the Dragon but he was too Strong for you");
             System.out.println("Game Over");
             int i = 1;
@@ -295,24 +298,24 @@ public class Game {
             }
         }
     }
-    public static void checkCave(Traveler traveler, Teammate t1, Teammate t2, Mountain mountain, Items items){
+
+    public static void checkCave(Traveler traveler, Teammate t1, Teammate t2, Mountain mountain, Items items) {
         System.out.println(mountain.approach);
         Scanner scan = new Scanner(System.in);
         String askCave = scan.nextLine();
 
+        if (askCave.equals("1")) {
+            System.out.println(mountain.caveGoIn);
+            chooseCave(traveler, t1, t2, mountain, items);
+        } else if (askCave.equals("2")) {
 
-            if (askCave.equals("1")) {
-                System.out.println(mountain.caveGoIn);
-                chooseCave(traveler, t1, t2, mountain, items);
-            } else if (askCave.equals("2")) {
+            System.out.println("You have Decided its the best to go Back");
 
-                System.out.println("You have Decided its the best to go Back");
-
-                Game(traveler, t1, t2);
-            } else {
-                System.out.println("Wrong Input");
-                checkCave(traveler, t1, t2, mountain, items);
-            }
+            Game(traveler, t1, t2);
+        } else {
+            System.out.println("Wrong Input");
+            checkCave(traveler, t1, t2, mountain, items);
+        }
     }
 
     public static void chooseCave(Traveler traveler, Teammate t1, Teammate t2, Mountain mountain, Items items) {
@@ -320,17 +323,16 @@ public class Game {
         System.out.println(mountain.caveChoose);
         String decide = scan.nextLine();
         int i = 1;
-        while (i == 1){
-
+        while (i == 1) {
 
             if (decide.equals("1")) {
                 System.out.println("Youve found a bag of Gold and a torch");
-                traveler.reward +=20;
+                traveler.reward += 20;
                 items.torch[2]++;
                 System.out.println("Youve Gained a Torch");
                 System.out.println("At the end of Cave you see a Village");
                 village(items, traveler, t1, t2);
-                System.out.println("Current Strength: "+ traveler.calcStrength(items));
+                System.out.println("Current Strength: " + traveler.calcStrength(items));
                 System.out.println("");
             } else if (decide.equals("2")) {
                 System.out.println("You see a big black room, maybe there is hiding a secret");
@@ -338,7 +340,7 @@ public class Game {
                 if (secret.equals("Ich mache ihm ein Angebot, das er nicht ablehnen kann")) {
                     System.out.println("Secret Ending");
                     Menue();
-                }else {
+                } else {
                     System.out.println("a door opend");
                     village(items, traveler, t1, t2);
                 }

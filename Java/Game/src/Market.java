@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Market {
     // item name and costs
     int gun = 2;
@@ -14,10 +13,10 @@ public class Market {
 
     // Market function to show the market items
     public void Market(Traveler traveler, Items items, Teammate t1, Teammate t2) {
-        System.out.println("Du besitzt: " +traveler.reward);
+        System.out.println("Du besitzt: " + traveler.reward);
         System.out.println("""
-                1. Gun Cost: 2 
-                2. Granades Cost: 3 
+                1. Gun Cost: 2
+                2. Granades Cost: 3
                 3. Chicken Wings Cost: 12
                 4. Shovel Cost: 2
                 5. Torch Cost 2
@@ -25,12 +24,12 @@ public class Market {
                 7. Controll Ward Cost: 5
                 8. Text Book Cost: 4
                 9. Exit Market
-                              
+
                 """);
 
         // check with option the player has chosen
         Scanner scanner = new Scanner(System.in);
-        String  item = scanner.nextLine();
+        String item = scanner.nextLine();
         // call the right function
         switch (item) {
             case "1" -> buyGun(items, traveler, t1, t2);

@@ -5,12 +5,7 @@ public class Teammate {
     int liveChecker = 1;
 
     // constructor for a Teammate
-    public Teammate(String name){
+    public Teammate(String name) {
         this.name = name;
     }
 }
-
-
-
-
-
