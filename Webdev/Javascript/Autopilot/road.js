@@ -15,13 +15,11 @@ class Road {
         const topRight = { x: this.right, y: this.top };
         const bottomLeft = { x: this.left, y: this.bottom };
         const bottomRight = { x: this.right, y: this.bottom };
-
         this.borders = [
             [topLeft, bottomLeft],
             [topRight, bottomRight]
         ];
     }
-
 
     getLaneCenter(laneIndex) {
         const laneWidth = this.width / this.laneCount;
@@ -46,6 +44,7 @@ class Road {
             ctx.lineTo(x, this.bottom);
             ctx.stroke();
         }
+
         ctx.setLineDash([]);
         this.borders.forEach(border => {
             ctx.beginPath();
@@ -55,6 +54,3 @@ class Road {
         });
     }
 }
-
-
-
