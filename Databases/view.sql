@@ -5,4 +5,4 @@ Go
 create unique CLUSTERED Index pk_view_Employee on view_Employees 
     (
     EmployeeID
-    )
+    );

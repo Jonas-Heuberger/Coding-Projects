@@ -1,7 +1,3 @@
-
- 
-
-
  create or alter function concat2
  (
     @s1 nvarchar(max), 
