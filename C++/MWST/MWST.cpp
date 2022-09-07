@@ -10,7 +10,6 @@ long double input()
 
 long double calc(long double money)
 {
-    // printf("LOL: %d", (int)((float)money / 107.7f));
     return (money / 107.7) * 100.0;
 }
 

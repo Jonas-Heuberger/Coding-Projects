@@ -30,7 +30,6 @@ void controller()
 int main()
 {
     cout << "Hello World \n";
-
     controller();
     return 0;
 }
