@@ -5,9 +5,9 @@ use dbo.Schule
 
 create table tbl_Klasse
 (
-    rowguid UNIQUEIDENTIFIER NOT NULL,
-    CONSTRAINT pk_tbl_Klasse PRIMARY KEY,
-    CONSTRAINT DF_tbl_Klasse_rowguid DEFAULT newid(),
+    rowguid UNIQUEIDENTIFIER NOT NULL
+        CONSTRAINT pk_tbl_Klasse PRIMARY KEY
+        CONSTRAINT DF_tbl_Klasse_rowguid DEFAULT newid(),
     Klassenname varchar(50) NOT NULL,
     
 
@@ -16,17 +16,17 @@ GO
 
 create table tbl_Faecher
 (
-    rowguid uniqueidentifier not null,
-    CONSTRAINT PK_tbl_Faecher PRIMARY KEY,
-    CONSTRAINT DF_tbl_Faecher_rowguid DEFAULT newid(),
+    rowguid uniqueidentifier not null
+        CONSTRAINT PK_tbl_Faecher PRIMARY KEY
+        CONSTRAINT DF_tbl_Faecher_rowguid DEFAULT newid(),
     Fachname nvarchar(50) not null,
 )
 go
 
 create table tbl_Lehrer
 (
-    rowguid uniqueidentifier not null,
-    CONSTRAINT PK_tbl_Lehrer PRIMARY KEY,
+    rowguid uniqueidentifier not null
+    CONSTRAINT PK_tbl_Lehrer PRIMARY KEY
     CONSTRAINT DF_tbl_Lehrer_rowguid DEFAULT newid(),
     Vorname nvarchar(50) not null,
     Nachname nvarchar(50) not null,
@@ -40,8 +40,8 @@ go
 
 create table tbl_Schueler
 (
-    rowguid uniqueidentifier not null,
-    CONSTRAINT PK_tbl_Schueler PRIMARY KEY,
+    rowguid uniqueidentifier not null
+    CONSTRAINT PK_tbl_Schueler PRIMARY KEY
     CONSTRAINT DF_tbl_Schueler_rowguid DEFAULT newid(),
     Vorname nvarchar(50) not null,
     Nachname nvarchar(50) not null,
