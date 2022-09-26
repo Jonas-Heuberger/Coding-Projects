@@ -1,16 +1,16 @@
 create database Schule
 go
 
-use dbo.Schule
+use dbo
+.Schule
+go
 
 create table tbl_Klasse
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
         CONSTRAINT pk_tbl_Klasse PRIMARY KEY
         CONSTRAINT DF_tbl_Klasse_rowguid DEFAULT newid(),
-    Klassenname varchar(50) NOT NULL,
-    
-
+    Klassenname nvarchar(50) NOT NULL,
 )
 GO
 
@@ -26,8 +26,8 @@ go
 create table tbl_Lehrer
 (
     rowguid uniqueidentifier not null
-    CONSTRAINT PK_tbl_Lehrer PRIMARY KEY
-    CONSTRAINT DF_tbl_Lehrer_rowguid DEFAULT newid(),
+        CONSTRAINT PK_tbl_Lehrer PRIMARY KEY
+        CONSTRAINT DF_tbl_Lehrer_rowguid DEFAULT newid(),
     Vorname nvarchar(50) not null,
     Nachname nvarchar(50) not null,
     Geburtsdatum date not null,
@@ -41,8 +41,8 @@ go
 create table tbl_Schueler
 (
     rowguid uniqueidentifier not null
-    CONSTRAINT PK_tbl_Schueler PRIMARY KEY
-    CONSTRAINT DF_tbl_Schueler_rowguid DEFAULT newid(),
+        CONSTRAINT PK_tbl_Schueler PRIMARY KEY
+        CONSTRAINT DF_tbl_Schueler_rowguid DEFAULT newid(),
     Vorname nvarchar(50) not null,
     Nachname nvarchar(50) not null,
     Geburtsdatum date not null,
@@ -54,6 +54,103 @@ create table tbl_Schueler
     CONSTRAINT fk_tbl_Schueler_tbl_Faecher FOREIGN KEY (fk_FaecherID) REFERENCES tbl_Faecher (rowguid)
 )
 go
+
+create view view_Klasse
+with
+    schemabinding
+as
+    select rowguid, Klassenname
+    from dbo.tbl_Klasse
+go
+
+create view view_Faecher
+with
+    schemabinding
+as
+    select rowguid, Fachname
+    from dbo.tbl_Faecher
+go
+
+create view view_Lehrer
+with
+    schemabinding
+as
+    select rowguid, Vorname, Nachname, Geburtsdatum, fk_FaecherID, fk_KlasseID
+    from dbo.tbl_Lehrer
+go
+
+create view view_Schueler
+with
+    schemabinding
+as
+    select rowguid, Vorname, Nachname, Geburtsdatum, fk_KlasseID, fk_LehrerID, fk_FaecherID
+    from dbo.tbl_Schueler
+go
+
+create view view_Lehrer_Faecher
+with
+    schemabinding
+as
+    select rowguid, Vorname, Nachname, Geburtsdatum, fk_FaecherID, fk_KlasseID, Fachname
+    from dbo.tbl_Lehrer
+        inner join dbo.tbl_Faecher on dbo.tbl_Lehrer.fk_FaecherID = dbo.tbl_Faecher.rowguid
+go
+
+create view view_Schueler_Lehrer
+with
+    schemabinding
+as
+    select rowguid, Vorname, Nachname, Geburtsdatum, fk_KlasseID, fk_LehrerID, fk_FaecherID, Vorname, Nachname, Geburtsdatum, fk_FaecherID, fk_KlasseID, Fachname
+    from dbo.tbl_Schueler
+        inner join dbo.tbl_Lehrer on dbo.tbl_Schueler.fk_LehrerID = dbo.tbl_Lehrer.rowguid
+        inner join dbo.tbl_Faecher on dbo.tbl_Schueler.fk_FaecherID = dbo.tbl_Faecher.rowguid
+go
+
+create view view_Schueler_Lehrer_Klasse
+with
+    schemabinding
+as
+    select rowguid, Vorname, Nachname, Geburtsdatum, fk_KlasseID, fk_LehrerID, fk_FaecherID, Vorname, Nachname, Geburtsdatum, fk_FaecherID, fk_KlasseID, Fachname, Klassenname
+    from dbo.tbl_Schueler
+        inner join dbo.tbl_Lehrer on dbo.tbl_Schueler.fk_LehrerID = dbo.tbl_Lehrer.rowguid
+        inner join dbo.tbl_Faecher on dbo.tbl_Schueler.fk_FaecherID = dbo.tbl_Faecher.rowguid
+        inner join dbo.tbl_Klasse on dbo.tbl_Schueler.fk_KlasseID = dbo.tbl_Klasse.rowguid
+go
+
+create view view_Lehrer_Faecher_Klasse
+with
+    schemabinding
+as
+    select rowguid, Vorname, Nachname, Geburtsdatum, fk_FaecherID, fk_KlasseID, Fachname, Klassenname
+    from dbo.tbl_Lehrer
+        inner join dbo.tbl_Faecher on dbo.tbl_Lehrer.fk_FaecherID = dbo.tbl_Faecher.rowguid
+        inner join dbo.tbl_Klasse on dbo.tbl_Lehrer.fk_KlasseID = dbo.tbl_Klasse.rowguid
+go
+
+create view view_Schueler_Lehrer_Faecher_Klasse
+with
+    schemabinding
+as
+    select rowguid, Vorname, Nachname, Geburtsdatum, fk_KlasseID, fk_LehrerID, fk_FaecherID, Vorname, Nachname, Geburtsdatum, fk_FaecherID, fk_KlasseID, Fachname, Klassenname
+    from dbo.tbl_Schueler
+        inner join dbo.tbl_Lehrer on dbo.tbl_Schueler.fk_LehrerID = dbo.tbl_Lehrer.rowguid
+        inner join dbo.tbl_Faecher on dbo.tbl_Schueler.fk_FaecherID = dbo.tbl_Faecher.rowguid
+        inner join dbo.tbl_Klasse on dbo.tbl_Schueler.fk_KlasseID = dbo.tbl_Klasse.rowguid
+go
+
+create view view_Schueler_Lehrer_Faecher
+with
+    schemabinding
+as
+    select rowguid, Vorname, Nachname, Geburtsdatum, fk_KlasseID, fk_LehrerID, fk_FaecherID, Vorname, Nachname, Geburtsdatum, fk_FaecherID, fk_KlasseID, Fachname
+    from dbo.tbl_Schueler
+        inner join dbo.tbl_Lehrer on dbo.tbl_Schueler.fk_LehrerID = dbo.tbl_Lehrer.rowguid
+        inner join dbo.tbl_Faecher on dbo.tbl_Schueler.fk_FaecherID = dbo.tbl_Faecher.rowguid
+go
+
+
+
+
 
 
     
