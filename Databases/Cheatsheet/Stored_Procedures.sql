@@ -1,3 +1,6 @@
+USE Schule 
+GO
+
 CREATE PROCEDURE sp_Klasse_insert
     @Klassenname nvarchar(50)
 AS

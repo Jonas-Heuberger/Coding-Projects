@@ -1,3 +1,6 @@
+USE Schule 
+GO
+
 CREATE TRIGGER tr_log_Klasse_insert on dbo.tbl_Klasse
 AFTER INSERT
 AS

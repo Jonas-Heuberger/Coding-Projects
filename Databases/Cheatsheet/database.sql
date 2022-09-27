@@ -79,19 +79,6 @@ CREATE TABLE tbl_Schueler_ist_in_Klasse
 )
 GO
 
-CREATE TABLE tbl_Klasse_besucht_Faecher
-(
-    rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Klasse_besucht_Faecher PRIMARY KEY
-        CONSTRAINT DF_tbl_Klasse_besucht_Faecher_rowguid DEFAULT newid(),
-    FK_KlasseID UNIQUEIDENTIFIER NOT NULL,
-    FK_FaecherID UNIQUEIDENTIFIER NOT NULL,
-    CONSTRAINT fk_tbl_Klasse_besucht_Faecher_tbl_Klasse FOREIGN KEY (FK_KlasseID) REFERENCES tbl_Klasse (rowguid),
-    CONSTRAINT fk_tbl_Klasse_besucht_Faecher_tbl_Faecher FOREIGN KEY (FK_FaecherID) REFERENCES tbl_Faecher (rowguid)
-)
-GO
-
-
 CREATE TABLE Logging
 (
     rowguid UNIQUEIDENTIFIER NOT NULL

@@ -1,3 +1,6 @@
+USE Schule
+GO
+
 ALTER TABLE tbl_Klasse add deleteDate datetime;
 GO
 

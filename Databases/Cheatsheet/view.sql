@@ -1,3 +1,6 @@
+USE Schule
+GO
+
 CREATE VIEW view_Klasse
 WITH
     SCHEMABINDING
