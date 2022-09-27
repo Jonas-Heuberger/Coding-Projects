@@ -45,7 +45,7 @@ CREATE TABLE tbl_Abonnements
     Abonnementname NVARCHAR(50) NOT NULL,
     Preis DECIMAL(10,2) NOT NULL,
     Dienstleistung UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Abonnements_tbl_Dienstleistungen FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistungen(rowguid)
+        CONSTRAINT FK_tbl_Abonnements_tbl_Dienstleistungen FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistung(rowguid)
 )
 GO
 
