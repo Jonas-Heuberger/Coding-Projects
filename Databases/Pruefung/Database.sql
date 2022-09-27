@@ -211,5 +211,40 @@ CREATE TABLE tbl_Dienstleistung_hat_Auspraegung
 )
 GO
 
+CREATE PROCEDURE sp_Update_Artikel
+@rowguid UNIQUEIDENTIFIER,
+@Artikelname NVARCHAR(50),
+@Preis DECIMAL(10,2),
+@Lieferfirma NVARCHAR(50),
+AS 
+BEGIN
+    INSERT INTO tbl_Artikel (rowguid, Artikelname, Preis, Lieferfirma)
+    VALUES (@rowguid, @Artikelname, @Preis, @Lieferfirma)
+END
+GO
+
+ALTER TABLE tbl_Kunde add deleteDate datetime;
+GO
+
+CREATE trigger trig_Bin_Kunde on tbl_Kunde
+INSTEAD of DELETE
+AS
+BEGIN
+    UPDATE tbl_Kunde
+    SET deleteDate = GETDATE()
+    WHERE rowguid = (SELECT rowguid
+    FROM deleted)
+END
+GO
+
+
+create view view_kunde
+as
+select * from tbl_Kunde
+where deleteDate is null
+GO
+CREATE CLUSTERED INDEX IX_tbl_Kunde ON tbl_Kunde (rowguid)
+GO
+
 
 
