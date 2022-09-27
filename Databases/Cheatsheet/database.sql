@@ -40,6 +40,10 @@ CREATE TABLE tbl_Schueler
     Vorname nvarchar(50) not null,
     Nachname nvarchar(50) not null,
     Geburtsdatum date not null,
+    KlasseID uniqueidentifier not null
+        CONSTRAINT FK_tbl_Schueler_tbl_Klasse 
+        FOREIGN KEY (KlasseID) 
+        REFERENCES tbl_Klasse(rowguid),
 )
 GO
 
@@ -67,17 +71,6 @@ CREATE TABLE Lehrer_unterrichtet_Faecher
 )
 GO
 
-CREATE TABLE tbl_Schueler_ist_in_Klasse
-(
-    rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Schueler_besucht_Klasse PRIMARY KEY
-        CONSTRAINT DF_tbl_Schueler_besucht_Klasse_rowguid DEFAULT newid(),
-    FK_SchuelerID UNIQUEIDENTIFIER NOT NULL,
-    FK_KlasseID UNIQUEIDENTIFIER NOT NULL,
-    CONSTRAINT fk_tbl_Schueler_besucht_Klasse_tbl_Schueler FOREIGN KEY (FK_SchuelerID) REFERENCES tbl_Schueler (rowguid),
-    CONSTRAINT fk_tbl_Schueler_besucht_Klasse_tbl_Klasse FOREIGN KEY (FK_KlasseID) REFERENCES tbl_Klasse (rowguid)
-)
-GO
 
 CREATE TABLE Logging
 (
