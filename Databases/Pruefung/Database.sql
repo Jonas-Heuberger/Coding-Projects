@@ -7,7 +7,7 @@ GO
 CREATE TABLE tbl_Lieferfirma
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Lieferfirma PRIMARY KEY,
+        CONSTRAINT PK_tbl_Lieferfirma PRIMARY KEY
     CONSTRAINT DF_tbl_Lieferfirma_rowguid DEFAULT (newid()),
     Firmenname NVARCHAR(50) NOT NULL,
     Artikel VARCHAR(50) NOT NULL,
@@ -18,7 +18,7 @@ GO
 CREATE TABLE tbl_Artikel
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Artikel PRIMARY KEY,
+        CONSTRAINT PK_tbl_Artikel PRIMARY KEY
     CONSTRAINT DF_tbl_Artikel_rowguid DEFAULT (newid()),
     Artikelname NVARCHAR(50) NOT NULL,
     Preis DECIMAL(10,2) NOT NULL,
@@ -30,7 +30,7 @@ GO
 CREATE TABLE tbl_Abonnements
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Abonnements PRIMARY KEY,
+        CONSTRAINT PK_tbl_Abonnements PRIMARY KEY
     CONSTRAINT DF_tbl_Abonnements_rowguid DEFAULT (newid()),
     Abonnementname NVARCHAR(50) NOT NULL,
     Preis DECIMAL(10,2) NOT NULL,
@@ -42,7 +42,7 @@ GO
 CREATE TABLE tbl_Dienstleistung
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Dienstleistung PRIMARY KEY,
+        CONSTRAINT PK_tbl_Dienstleistung PRIMARY KEY
     CONSTRAINT DF_tbl_Dienstleistung_rowguid DEFAULT (newid()),
     Dienstleistungname NVARCHAR(50) NOT NULL,
     Preis DECIMAL(10,2) NOT NULL,
@@ -52,7 +52,7 @@ GO
 CREATE TABLE tbl_Mitarbeiter
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Mitarbeiter PRIMARY KEY,
+        CONSTRAINT PK_tbl_Mitarbeiter PRIMARY KEY
     CONSTRAINT DF_tbl_Mitarbeiter_rowguid DEFAULT (newid()),
     Vorname NVARCHAR(50) NOT NULL,
     Nachname NVARCHAR(50) NOT NULL,
@@ -65,7 +65,7 @@ GO
 CREATE TABLE tbl_Kunden
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Kunden PRIMARY KEY,
+        CONSTRAINT PK_tbl_Kunden PRIMARY KEY
     CONSTRAINT DF_tbl_Kunden_rowguid DEFAULT (newid()),
     Vorname NVARCHAR(50) NOT NULL,
     Nachname NVARCHAR(50) NOT NULL,
@@ -83,7 +83,7 @@ GO
 CREATE TABLE tbl_Chemie
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Chemie PRIMARY KEY,
+        CONSTRAINT PK_tbl_Chemie PRIMARY KEY
     CONSTRAINT DF_tbl_Chemie_rowguid DEFAULT (newid()),
     ChemieName NVARCHAR(50) NOT NULL,
     Preis DECIMAL(10,2) NOT NULL,
@@ -93,7 +93,7 @@ GO
 CREATE TABLE tbl_Auspraegung
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Auspraegung PRIMARY KEY,
+        CONSTRAINT PK_tbl_Auspraegung PRIMARY KEY
     CONSTRAINT DF_tbl_Auspraegung_rowguid DEFAULT (newid()),
     AuspraegungName NVARCHAR(50) NOT NULL,
     Preis DECIMAL(10,2) NOT NULL,
@@ -103,7 +103,7 @@ GO
 CREATE TABLE tbl_Anwesenheit
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Termin PRIMARY KEY,
+        CONSTRAINT PK_tbl_Termin PRIMARY KEY
     CONSTRAINT DF_tbl_Termin_rowguid DEFAULT (newid()),
     Datum DATE NOT NULL,
     Uhrzeit TIME NOT NULL,
