@@ -27,6 +27,16 @@ CREATE TABLE tbl_Artikel
 )
 GO
 
+CREATE TABLE tbl_Dienstleistung
+(
+    rowguid UNIQUEIDENTIFIER NOT NULL
+        CONSTRAINT PK_tbl_Dienstleistung PRIMARY KEY
+    CONSTRAINT DF_tbl_Dienstleistung_rowguid DEFAULT (newid()),
+    Dienstleistungname NVARCHAR(50) NOT NULL,
+    Preis DECIMAL(10,2) NOT NULL,
+)
+GO
+
 CREATE TABLE tbl_Abonnements
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
@@ -39,15 +49,7 @@ CREATE TABLE tbl_Abonnements
 )
 GO
 
-CREATE TABLE tbl_Dienstleistung
-(
-    rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Dienstleistung PRIMARY KEY
-    CONSTRAINT DF_tbl_Dienstleistung_rowguid DEFAULT (newid()),
-    Dienstleistungname NVARCHAR(50) NOT NULL,
-    Preis DECIMAL(10,2) NOT NULL,
-)
-GO
+
 
 CREATE TABLE tbl_Mitarbeiter
 (
@@ -227,6 +229,11 @@ CREATE TABLE tbl_Dienstleistung_hat_Auspraegung
 )
 GO
 
+CREATE VIEW view_Kunden
+AS 
+SELECT 
 
+
+GO 
 
 
