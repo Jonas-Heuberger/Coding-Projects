@@ -1,3 +1,6 @@
+USE Friseursalon
+GO
+
 INSERT INTO Kunde (Vorname, Nachname, Geburtsdatum, Geschlecht, Telefonnummer, Email, Adresse, PLZ, Ort, Land)
 VALUES ('Max', 'Mustermann', '1990-01-01', 'm', '0123456789', '', 'email 1', '12345', 'Musterstadt', 'Deutschland')
 

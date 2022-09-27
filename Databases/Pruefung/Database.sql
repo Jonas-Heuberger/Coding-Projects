@@ -62,11 +62,11 @@ CREATE TABLE tbl_Mitarbeiter
 )
 GO
 
-CREATE TABLE tbl_Kunden
+CREATE TABLE tbl_Kunde
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Kunden PRIMARY KEY
-    CONSTRAINT DF_tbl_Kunden_rowguid DEFAULT (newid()),
+        CONSTRAINT PK_tbl_Kunde PRIMARY KEY
+    CONSTRAINT DF_tbl_Kunde_rowguid DEFAULT (newid()),
     Vorname NVARCHAR(50) NOT NULL,
     Nachname NVARCHAR(50) NOT NULL,
     Telefonnummer NVARCHAR(50) NOT NULL,
@@ -76,7 +76,7 @@ CREATE TABLE tbl_Kunden
     PLZ NVARCHAR(50) NOT NULL,
     Ort NVARCHAR(50) NOT NULL,
     StylistID UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Kunden_tbl_Mitarbeiter FOREIGN KEY (StylistID) REFERENCES tbl_Mitarbeiter(rowguid)
+        CONSTRAINT FK_tbl_Kunde_tbl_Mitarbeiter FOREIGN KEY (StylistID) REFERENCES tbl_Mitarbeiter(rowguid)
 )
 GO
 
@@ -131,7 +131,7 @@ CREATE TABLE tbl_Kunde_kauft_Artikel
         CONSTRAINT PK_tbl_Kunde_kauft_Artikel PRIMARY KEY
         CONSTRAINT DF_tbl_Kunde_kauft_Artikel_rowguid DEFAULT (newid()),
     Kunde UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Kunde_kauft_Artikel_tbl_Kunden FOREIGN KEY (Kunde) REFERENCES tbl_Kunden(rowguid),
+        CONSTRAINT FK_tbl_Kunde_kauft_Artikel_tbl_Kunde FOREIGN KEY (Kunde) REFERENCES tbl_Kunde(rowguid),
     Artikel UNIQUEIDENTIFIER NOT NULL
         CONSTRAINT FK_tbl_Kunde_kauft_Artikel_tbl_Artikel FOREIGN KEY (Artikel) REFERENCES tbl_Artikel(rowguid),
 )
@@ -143,7 +143,7 @@ CREATE TABLE tbl_Kunde_bezieht_tbl_Dienstleistung_durch_tbl_Stylist
         CONSTRAINT PK_tbl_Kunde_bezieht_tbl_Dienstleistung PRIMARY KEY
         CONSTRAINT DF_tbl_Kunde_bezieht_tbl_Dienstleistung_rowguid DEFAULT (newid()),
     Kunde UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Kunde_bezieht_tbl_Dienstleistung_tbl_Kunden FOREIGN KEY (Kunde) REFERENCES tbl_Kunden(rowguid),
+        CONSTRAINT FK_tbl_Kunde_bezieht_tbl_Dienstleistung_tbl_Kunde FOREIGN KEY (Kunde) REFERENCES tbl_Kunde(rowguid),
     Dienstleistung UNIQUEIDENTIFIER NOT NULL
         CONSTRAINT FK_tbl_Kunde_bezieht_tbl_Dienstleistung_tbl_Dienstleistung FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistung(rowguid),
     Stylist UNIQUEIDENTIFIER NOT NULL
@@ -157,7 +157,7 @@ CREATE TABLE tbl_Kunde_erwirbt_tbl_Abonnements
         CONSTRAINT PK_tbl_Kunde_erwirbt_tbl_Abonnements PRIMARY KEY
         CONSTRAINT DF_tbl_Kunde_erwirbt_tbl_Abonnements_rowguid DEFAULT (newid()),
     Kunde UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Kunde_erwirbt_tbl_Abonnements_tbl_Kunden FOREIGN KEY (Kunde) REFERENCES tbl_Kunden(rowguid),
+        CONSTRAINT FK_tbl_Kunde_erwirbt_tbl_Abonnements_tbl_Kunde FOREIGN KEY (Kunde) REFERENCES tbl_Kunde(rowguid),
     Abonnement UNIQUEIDENTIFIER NOT NULL
         CONSTRAINT FK_tbl_Kunde_erwirbt_tbl_Abonnements_tbl_Abonnements FOREIGN KEY (Abonnement) REFERENCES tbl_Abonnements(rowguid),
 )
