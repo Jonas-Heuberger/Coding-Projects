@@ -1,12 +1,12 @@
-create dbo.Schule
+create DATABASE Schule
 GO
-use dbo.Schule
+use Schule
 GO
 
 create table tbl_Klasse
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT pk_tbl_Klasse PRIMARY KEY
+        CONSTRAINT PK_tbl_Klasse PRIMARY KEY
         CONSTRAINT DF_tbl_Klasse_rowguid DEFAULT newid(),
     Klassenname nvarchar(50) NOT NULL,
 )
@@ -46,7 +46,7 @@ GO
 CREATE TABLE tbl_Klasse_besucht_Faecher
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT pk_tbl_Klasse_besucht_Faecher PRIMARY KEY
+        CONSTRAINT PK_tbl_Klasse_besucht_Faecher PRIMARY KEY
         CONSTRAINT DF_tbl_Klasse_besucht_Faecher_rowguid DEFAULT newid(),
     FK_KlasseID UNIQUEIDENTIFIER NOT NULL,
     FK_FaecherID UNIQUEIDENTIFIER NOT NULL,
@@ -58,7 +58,7 @@ GO
 CREATE TABLE tbl_Schueler_haben_Lehrer_in_Faecher
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT pk_tbl_Schueler_haben_Lehrer_in_Faecher PRIMARY KEY
+        CONSTRAINT PK_tbl_Schueler_haben_Lehrer_in_Faecher PRIMARY KEY
         CONSTRAINT DF_tbl_Schueler_haben_Lehrer_in_Faecher_rowguid DEFAULT newid(),
     FK_SchuelerID UNIQUEIDENTIFIER NOT NULL,
     FK_LehrerID UNIQUEIDENTIFIER NOT NULL,
