@@ -45,7 +45,7 @@ CREATE TABLE tbl_Abonnements
     Abonnementname NVARCHAR(50) NOT NULL,
     Preis DECIMAL(10,2) NOT NULL,
     Dienstleistung UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Abonnements_tbl_DienstleistungFOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistung(rowguid)
+        CONSTRAINT FK_tbl_Abonnements_tbl_Dienstleistung FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistung(rowguid)
 )
 GO
 
@@ -116,15 +116,7 @@ GO
 CREATE TABLE tbl_Assistent
 (
     rowguid UNIQUEIDENTIFIER PRIMARY KEY NOT NULL
-        FOREIGN KEY (rowguid) REFERENCES tbl_Mitarbeiter(rowguid),
-    Vorname NVARCHAR(50) NOT NULL
-        FOREIGN KEY (Vorname) REFERENCES tbl_Mitarbeiter(Vorname),
-    Nachname NVARCHAR(50) NOT NULL
-        FOREIGN KEY (Nachname) REFERENCES tbl_Mitarbeiter(Nachname),
-    Aufgabe NVARCHAR(50) NOT NULL
-        FOREIGN KEY (Aufgabe) REFERENCES tbl_Mitarbeiter(Aufgabe),
-    Anwesenheitsdaten DATE NOT NULL
-        FOREIGN KEY (Anwesenheitsdaten) REFERENCES tbl_Mitarbeiter(Anwesenheitsdaten),
+        FOREIGN KEY (rowguid) REFERENCES tbl_Mitarbeiter(rowguid),   
 )
 GO
 
@@ -132,14 +124,6 @@ CREATE TABLE tbL_Stylist
 (
     rowguid UNIQUEIDENTIFIER PRIMARY KEY NOT NULL
         FOREIGN KEY (rowguid) REFERENCES tbl_Mitarbeiter(rowguid),
-    Vorname NVARCHAR(50) NOT NULL
-        FOREIGN KEY (Vorname) REFERENCES tbl_Mitarbeiter(Vorname),
-    Nachname NVARCHAR(50) NOT NULL
-        FOREIGN KEY (Nachname) REFERENCES tbl_Mitarbeiter(Nachname),
-    Aufgabe NVARCHAR(50) NOT NULL
-        FOREIGN KEY (Aufgabe) REFERENCES tbl_Mitarbeiter(Aufgabe),
-    Anwesenheitsdaten DATE NOT NULL,
-    FOREIGN KEY (Anwesenheitsdaten) REFERENCES tbl_Mitarbeiter(Anwesenheitsdaten),
 )
 GO
 
