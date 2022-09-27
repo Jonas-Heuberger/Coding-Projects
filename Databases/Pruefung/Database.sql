@@ -59,8 +59,6 @@ CREATE TABLE tbl_Mitarbeiter
     Vorname NVARCHAR(50) NOT NULL,
     Nachname NVARCHAR(50) NOT NULL,
     Aufgabe NVARCHAR(50) NOT NULL,
-    Anwesenheitsdaten DATE NOT NULL,
-
 )
 GO
 
@@ -212,4 +210,6 @@ CREATE TABLE tbl_Dienstleistung_hat_Auspraegung
         CONSTRAINT FK_tbl_Dienstleistung_hat_Auspraegung_tbl_Auspraegung FOREIGN KEY (Auspraegung) REFERENCES tbl_Auspraegung(rowguid),
 )
 GO
+
+
 
