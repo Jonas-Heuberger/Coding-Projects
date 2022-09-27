@@ -90,12 +90,12 @@ CREATE TABLE tbl_Chemie
 )
 GO
 
-CREATE TABLE tbl_Ausprägung
+CREATE TABLE tbl_Auspraegung
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Ausprägung PRIMARY KEY,
-    CONSTRAINT DF_tbl_Ausprägung_rowguid DEFAULT (newid()),
-    AusprägungName NVARCHAR(50) NOT NULL,
+        CONSTRAINT PK_tbl_Auspraegung PRIMARY KEY,
+    CONSTRAINT DF_tbl_Auspraegung_rowguid DEFAULT (newid()),
+    AuspraegungName NVARCHAR(50) NOT NULL,
     Preis DECIMAL(10,2) NOT NULL,
 )
 GO
@@ -215,15 +215,15 @@ CREATE TABLE tbl_Dienstleistung_braucht_tbl_Chemie
 )
 GO
 
-CREATE TABLE tbl_Dienstleistung_hat_Ausprägung
+CREATE TABLE tbl_Dienstleistung_hat_Auspraegung
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Dienstleistung_hat_Ausprägung PRIMARY KEY
-        CONSTRAINT DF_tbl_Dienstleistung_hat_Ausprägung_rowguid DEFAULT (newid()),
+        CONSTRAINT PK_tbl_Dienstleistung_hat_Auspraegung PRIMARY KEY
+        CONSTRAINT DF_tbl_Dienstleistung_hat_Auspraegung_rowguid DEFAULT (newid()),
     Dienstleistung UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Dienstleistung_hat_Ausprägung_tbl_Dienstleistungen FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistungen(rowguid),
-    Ausprägung UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Dienstleistung_hat_Ausprägung_tbl_Ausprägung FOREIGN KEY (Ausprägung) REFERENCES tbl_Ausprägung(rowguid),
+        CONSTRAINT FK_tbl_Dienstleistung_hat_Auspraegung_tbl_Dienstleistungen FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistungen(rowguid),
+    Auspraegung UNIQUEIDENTIFIER NOT NULL
+        CONSTRAINT FK_tbl_Dienstleistung_hat_Auspraegung_tbl_Auspraegung FOREIGN KEY (Auspraegung) REFERENCES tbl_Auspraegung(rowguid),
 )
 GO
 
