@@ -147,7 +147,7 @@ CREATE TABLE tbl_Kunde_bezieht_tbl_Dienstleistung_durch_tbl_Stylist
     Kunde UNIQUEIDENTIFIER NOT NULL
         CONSTRAINT FK_tbl_Kunde_bezieht_tbl_Dienstleistung_tbl_Kunden FOREIGN KEY (Kunde) REFERENCES tbl_Kunden(rowguid),
     Dienstleistung UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Kunde_bezieht_tbl_Dienstleistung_tbl_DienstleistungFOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistungen(rowguid),
+        CONSTRAINT FK_tbl_Kunde_bezieht_tbl_Dienstleistung_tbl_Dienstleistung FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistung(rowguid),
     Stylist UNIQUEIDENTIFIER NOT NULL
         CONSTRAINT FK_tbl_Kunde_bezieht_tbl_Dienstleistung_tbl_Stylist FOREIGN KEY (Stylist) REFERENCES tbl_Stylist(rowguid),
 )
@@ -195,7 +195,7 @@ CREATE TABLE tbl_Dienstleistung_braucht_tbl_Chemie
         CONSTRAINT PK_tbl_Dienstleistung_braucht_tbl_Chemie PRIMARY KEY
         CONSTRAINT DF_tbl_Dienstleistung_braucht_tbl_Chemie_rowguid DEFAULT (newid()),
     Dienstleistung UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Dienstleistung_braucht_tbl_Chemie_tbl_DienstleistungFOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistungen(rowguid),
+        CONSTRAINT FK_tbl_Dienstleistung_braucht_tbl_Chemie_tbl_Dienstleistung FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistungen(rowguid),
     Chemie UNIQUEIDENTIFIER NOT NULL
         CONSTRAINT FK_tbl_Dienstleistung_braucht_tbl_Chemie_tbl_Chemie FOREIGN KEY (Chemie) REFERENCES tbl_Chemie(rowguid),
 )
@@ -207,13 +207,9 @@ CREATE TABLE tbl_Dienstleistung_hat_Auspraegung
         CONSTRAINT PK_tbl_Dienstleistung_hat_Auspraegung PRIMARY KEY
         CONSTRAINT DF_tbl_Dienstleistung_hat_Auspraegung_rowguid DEFAULT (newid()),
     Dienstleistung UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT FK_tbl_Dienstleistung_hat_Auspraegung_tbl_DienstleistungFOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistungen(rowguid),
+        CONSTRAINT FK_tbl_Dienstleistung_hat_Auspraegung_tbl_Dienstleistung FOREIGN KEY (Dienstleistung) REFERENCES tbl_Dienstleistungen(rowguid),
     Auspraegung UNIQUEIDENTIFIER NOT NULL
         CONSTRAINT FK_tbl_Dienstleistung_hat_Auspraegung_tbl_Auspraegung FOREIGN KEY (Auspraegung) REFERENCES tbl_Auspraegung(rowguid),
 )
 GO
-
-CREATE VIEW vw_Kunden
-AS
-
 
