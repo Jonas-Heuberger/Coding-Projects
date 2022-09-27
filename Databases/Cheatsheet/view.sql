@@ -49,14 +49,6 @@ AS
     FROM dbo.Lehrer_unterrichtet_Faecher
 GO
 
-CREATE VIEW view_Schueler_ist_in_Klasse
-WITH
-    SCHEMABINDING
-AS
-    SELECT rowguid, FK_SchuelerID, FK_KlasseID
-    FROM dbo.tbl_Schueler_ist_in_Klasse
-GO
-
 CREATE VIEW view_Logging
 WITH
     SCHEMABINDING
