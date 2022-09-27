@@ -55,55 +55,70 @@ CREATE TABLE tbl_Klasse_besucht_Faecher
 )
 GO
 
-CREATE TABLE tbl_Schueler_haben_Lehrer_in_Faecher
+CREATE TABLE Lehrer_unterrichtet_Faecher
 (
     rowguid UNIQUEIDENTIFIER NOT NULL
-        CONSTRAINT PK_tbl_Schueler_haben_Lehrer_in_Faecher PRIMARY KEY
-        CONSTRAINT DF_tbl_Schueler_haben_Lehrer_in_Faecher_rowguid DEFAULT newid(),
-    FK_SchuelerID UNIQUEIDENTIFIER NOT NULL,
+        CONSTRAINT PK_Lehrer_unterrichtet_Faecher PRIMARY KEY
+        CONSTRAINT DF_Lehrer_unterrichtet_Faecher_rowguid DEFAULT newid(),
     FK_LehrerID UNIQUEIDENTIFIER NOT NULL,
     FK_FaecherID UNIQUEIDENTIFIER NOT NULL,
-    CONSTRAINT fk_tbl_Schueler_haben_Lehrer_in_Faecher_tbl_Schueler FOREIGN KEY (FK_SchuelerID) REFERENCES tbl_Schueler (rowguid),
-    CONSTRAINT fk_tbl_Schueler_haben_Lehrer_in_Faecher_tbl_Lehrer FOREIGN KEY (FK_LehrerID) REFERENCES tbl_Lehrer (rowguid),
-    CONSTRAINT fk_tbl_Schueler_haben_Lehrer_in_Faecher_tbl_Faecher FOREIGN KEY (FK_FaecherID) REFERENCES tbl_Faecher (rowguid)
+    CONSTRAINT fk_Lehrer_unterrichtet_Faecher_tbl_Lehrer FOREIGN KEY (FK_LehrerID) REFERENCES tbl_Lehrer (rowguid),
+    CONSTRAINT fk_Lehrer_unterrichtet_Faecher_tbl_Faecher FOREIGN KEY (FK_FaecherID) REFERENCES tbl_Faecher (rowguid)
 )
 GO
 
-CREATE VIEW view_Klasse
-WITH SCHEMABINDING
-AS
-SELECT rowguid, Klassenname FROM dbo.tbl_Klasse
+CREATE TABLE tbl_Schueler_ist_in_Klasse
+(
+    rowguid UNIQUEIDENTIFIER NOT NULL
+        CONSTRAINT PK_tbl_Schueler_besucht_Klasse PRIMARY KEY
+        CONSTRAINT DF_tbl_Schueler_besucht_Klasse_rowguid DEFAULT newid(),
+    FK_SchuelerID UNIQUEIDENTIFIER NOT NULL,
+    FK_KlasseID UNIQUEIDENTIFIER NOT NULL,
+    CONSTRAINT fk_tbl_Schueler_besucht_Klasse_tbl_Schueler FOREIGN KEY (FK_SchuelerID) REFERENCES tbl_Schueler (rowguid),
+    CONSTRAINT fk_tbl_Schueler_besucht_Klasse_tbl_Klasse FOREIGN KEY (FK_KlasseID) REFERENCES tbl_Klasse (rowguid)
+)
 GO
 
-CREATE VIEW view_Faecher
-WITH SCHEMABINDING
-AS
-SELECT rowguid, Fachname FROM dbo.tbl_Faecher
+CREATE TABLE tbl_Klasse_besucht_Faecher
+(
+    rowguid UNIQUEIDENTIFIER NOT NULL
+        CONSTRAINT PK_tbl_Klasse_besucht_Faecher PRIMARY KEY
+        CONSTRAINT DF_tbl_Klasse_besucht_Faecher_rowguid DEFAULT newid(),
+    FK_KlasseID UNIQUEIDENTIFIER NOT NULL,
+    FK_FaecherID UNIQUEIDENTIFIER NOT NULL,
+    CONSTRAINT fk_tbl_Klasse_besucht_Faecher_tbl_Klasse FOREIGN KEY (FK_KlasseID) REFERENCES tbl_Klasse (rowguid),
+    CONSTRAINT fk_tbl_Klasse_besucht_Faecher_tbl_Faecher FOREIGN KEY (FK_FaecherID) REFERENCES tbl_Faecher (rowguid)
+)
 GO
 
-CREATE VIEW view_Lehrer
-WITH SCHEMABINDING
-AS
-SELECT rowguid, Vorname, Nachname, Geburtsdatum FROM dbo.tbl_Lehrer
+
+CREATE TABLE Logging
+(
+    rowguid UNIQUEIDENTIFIER NOT NULL
+        CONSTRAINT PK_Logging PRIMARY KEY
+        CONSTRAINT DF_Logging_rowguid DEFAULT newid(),
+    Action nvarchar(max) NOT NULL,
+    LogDate datetime not null DEFAULT (getdate()),
+    LogUser nvarchar(50) not null DEFAULT (suser_name()),
+)
 GO
 
-CREATE VIEW view_Schueler
-WITH SCHEMABINDING
-AS
-SELECT rowguid, Vorname, Nachname, Geburtsdatum FROM dbo.tbl_Schueler
-GO
 
-CREATE VIEW view_Klasse_besucht_Faecher
-WITH SCHEMABINDING
-AS
-SELECT rowguid, FK_KlasseID, FK_FaecherID FROM dbo.tbl_Klasse_besucht_Faecher
-GO
 
-CREATE VIEW view_Schueler_haben_Lehrer_in_Faecher
-WITH SCHEMABINDING
-AS
-SELECT rowguid, FK_SchuelerID, FK_LehrerID, FK_FaecherID FROM dbo.tbl_Schueler_haben_Lehrer_in_Faecher
-GO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
